@@ -36,7 +36,7 @@ main {
   flex-direction: column;
   background: #1C1A19;
   height: 100vh;
-  background-image: url("icons/matrix.svg");
+  background-image: url("matrix.svg");
   background-repeat: no-repeat;
   background-position: 100% 125%;
   padding: 120px 24px 0px 24px;
