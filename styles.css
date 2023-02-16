@@ -23,7 +23,7 @@ header {
 #name {
   display: inline;
   min-width: 77px;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -86,7 +86,7 @@ h4 {
 }
 
 .description {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
