@@ -301,3 +301,8 @@ h4 {
   background-color: #091e42;
 }
 
+.about-me {
+  display: grid;
+  grid-template-rows: 563px 89px 1241.46px;
+  background: rgba(28, 26, 25, 1);
+}
