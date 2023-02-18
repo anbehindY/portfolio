@@ -168,7 +168,7 @@ h4 {
 }
 
 #support-text {
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -190,7 +190,7 @@ h4 {
   width: auto;
   height: 40px;
   border: 1px solid #8993a4;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -219,7 +219,7 @@ h4 {
 .card-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   grid-row: 5/6;
 }
 
@@ -334,11 +334,11 @@ h4 {
 }
 
 #text {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   width: 327px;
   height: 148px;
@@ -359,7 +359,7 @@ h4 {
   height: 48px;
   color: rgba(255, 255, 255, 1);
   background: rgba(255, 107, 0, 1);
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -379,18 +379,18 @@ h4 {
 }
 
 #language {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px; 
+  line-height: 44px;
   background: url(Images/square-2.svg);
   background-repeat: no-repeat;
   background-position: 20% 4%;
 }
 
 #frameworks {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -401,7 +401,7 @@ h4 {
 }
 
 #skills {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -419,4 +419,3 @@ h4 {
   line-height: 50px;
   margin-top: 20px;
 }
-
