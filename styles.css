@@ -38,7 +38,7 @@ main {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
-  height: 100vh;
+  height: 94vh;
   background-image: url("Images/matrix.svg");
   background-repeat: no-repeat;
   background-position: 100% 120%;
@@ -103,6 +103,14 @@ h4 {
   order: 3;
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+.socials ul {
+  list-style: none;
+}
+
+.socials ul li {
+  display: inline;
 }
 
 .work-section {
