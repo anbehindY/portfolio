@@ -178,6 +178,7 @@ h4 {
   margin-top: 12px;
   line-height: 24px;
 }
+
 .tech-box {
   width: 297px;
   margin-top: 30px;
@@ -266,6 +267,7 @@ h4 {
 .tech-stack ul {
   display: inline;
 }
+
 .tech-stack ul li {
   padding: 2% 3%;
   background: rgba(255, 255, 255, 0.24);
@@ -281,6 +283,7 @@ h4 {
   list-style: none;
   margin-right: 12px;
 }
+
 .project-button {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -416,3 +419,4 @@ h4 {
   line-height: 50px;
   margin-top: 20px;
 }
+
