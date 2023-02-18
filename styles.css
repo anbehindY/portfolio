@@ -41,9 +41,8 @@ main {
   height: 100vh;
   background-image: url("Images/matrix.svg");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 100% 120%;
   padding: 120px 24px 0 24px;
-  flex-grow: 1;
 }
 
 .headline-section {
@@ -180,7 +179,7 @@ h4 {
 }
 
 .tech-box {
-  width: 297px;
+  width: auto;
   margin-top: 30px;
 }
 
