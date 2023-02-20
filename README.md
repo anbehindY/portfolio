@@ -108,9 +108,9 @@ To run tests:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Responsiveness**
-- [ ] **Desktop version**
-- [ ] **Accessibility features**
+- **Responsiveness**
+- **Desktop version**
+- **Accessibility features**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
