@@ -69,7 +69,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:anbehindY/Portfolio_setup.git
 
 
 ### Usage
