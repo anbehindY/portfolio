@@ -121,6 +121,8 @@ To run tests:
 
 Contributions, issues, and feature requests are welcome!
 
+ - https://github.com/anbehindY/Portfolio_setup/issues
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
