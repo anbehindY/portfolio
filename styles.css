@@ -469,3 +469,11 @@ button {
   letter-spacing: 0.03em;
 
 }
+textarea {
+  height: 114px;
+width: 327px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background: #FBF8F7;
+}
