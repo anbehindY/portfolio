@@ -18,7 +18,7 @@
     <header>
         <div id="name"><a href="#">John Doe</a></div>
         <nav class="toolbar">
-            <a id="hamburger" href="#"><img src="icons/menu.svg"></a>
+            <a id="hamburger" href="#"><img src="icons/menu.svg" alt="menu logo"></a>
         </nav>
     </header>
     <main>
@@ -31,19 +31,19 @@
             <div class="socials">
                 <ul>
                     <li>
-                        <a class="social" href=""><img src="icons/github.svg" /></a>
+                        <a class="social" href=""><img src="icons/github.svg" alt="Github logo" /></a>
                     </li>
                     <li>
-                        <a class="social" href=""><img src="icons/linkedin.svg" /></a>
+                        <a class="social" href=""><img src="icons/linkedin.svg" alt="Linkedin logo" /></a>
                     </li>
                     <li>
-                        <a class="social" href=""><img src="icons/angelist.svg" /></a>
+                        <a class="social" href=""><img src="icons/angelist.svg" alt="Angelist logo" /></a>
                     </li>
                     <li>
-                        <a class="social" href=""><img src="icons/twitter.svg" /></a>
+                        <a class="social" href=""><img src="icons/twitter.svg" alt="Twitter logo" /></a>
                     </li>
                     <li>
-                        <a class="social" href=""><img src="icons/medium.svg" /></a>
+                        <a class="social" href=""><img src="icons/medium.svg" alt="Medium logo" /></a>
                     </li>
                 </ul>
             </div>
@@ -242,6 +242,44 @@
             </ul>
         </div>
     </section>
+    <!--Contact-form-section-->
+    <section class="contact-form">
+        <form action="https://formspree.io/f/xayzobow" method="post" >
+            <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+        <fieldset>
+            <label for="name">
+                <input id="name" name="name" type="text" placeholder="Enter Your Name" maxlength="30" required />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="email">
+                <input id="email" name="email_address" type="email" placeholder="Enter Your Email Address" required />
+            </label>
+        </fieldset>
+            <textarea id="message" name="message_box" type="text" placeholder="Enter text here" maxlength="500" required ></textarea>
+            <button type="submit" value="Get in touch">Get in touch</button>
+        </form>
+    </section>
+    <hr>
+    <footer>
+            <ul>
+                <li>
+                    <a class="social" href=""><img src="icons/github.svg" alt="Github logo" /></a>
+                </li>
+                <li>
+                    <a class="social" href=""><img src="icons/linkedin.svg" alt="Linkedin logo" /></a>
+                </li>
+                <li>
+                    <a class="social" href=""><img src="icons/angelist.svg" alt="Angelist logo" /></a>
+                </li>
+                <li>
+                    <a class="social" href=""><img src="icons/twitter.svg" alt="Twitter logo" /></a>
+                </li>
+                <li>
+                    <a class="social" href=""><img src="icons/medium.svg" alt="Medium logo" /></a>
+                </li>
+            </ul>
+    </footer>
 </body>
 
 </html>
