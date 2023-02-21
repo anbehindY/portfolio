@@ -444,37 +444,51 @@ h4 {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin-bottom:73px;
+  margin-bottom:100px;
 }
 
+fieldset {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 24px;
+}
+
+#name, #email {
+  border: none;
+  color: #979493;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-indent: 15px;
+  height: 30px;
+  padding-bottom: 10px;
+}
 button {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 0;
-  gap: 10px;
+  justify-content: center;
+  padding: 12px;
   width: 131px;
   height: 48px;
   border: none;
-  background: #FF6B00;
-  font-family: 'Inter';
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #FFFFFF;
- 
+  color: #fff;
   display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
 }
+
 textarea {
   height: 114px;
-width: 327px;
-left: 0px;
-top: 0px;
-border-radius: 0px;
-background: #FBF8F7;
+  width: 327px;
+  text-indent: 10px;
+  background: #FBF8F7;
+  line-height: 30px;
+  margin-bottom: 12px;
 }
