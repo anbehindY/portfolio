@@ -431,13 +431,11 @@ h4 {
   margin-top: 20px;
 }
 
-/**************************contact form********************************************/
-
-.contact-form{
+.contact-form {
   padding: 120px 24px 124px 24px;
 }
 
-.contact-form h1{
+.contact-form form h1 {
   width: 327px;
   height: 216px;
   font-family: 'Inter', sans-serif;
@@ -447,7 +445,7 @@ h4 {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
 
 fieldset {
@@ -456,7 +454,8 @@ fieldset {
   margin-bottom: 24px;
 }
 
-#name, #email {
+#name,
+#email {
   border: none;
   color: #979493;
   font-family: 'Inter', sans-serif;
@@ -497,12 +496,11 @@ button {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  display: flex;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-footer ul {
+.logos{
   display: flex;
   list-style: none;
   gap: 25px;
