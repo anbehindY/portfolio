@@ -435,7 +435,7 @@ h4 {
   padding: 120px 24px 124px 24px;
 }
 
-.contact-form form h1 {
+#contact-header {
   width: 327px;
   height: 216px;
   font-family: 'Inter', sans-serif;
@@ -500,7 +500,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.logos{
+.logos {
   display: flex;
   list-style: none;
   gap: 25px;
