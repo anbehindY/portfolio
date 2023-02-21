@@ -430,3 +430,19 @@ h4 {
   line-height: 50px;
   margin-top: 20px;
 }
+/**************************contct form********************************************/
+.contact-form h1{
+  width: 327px;
+height: 216px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* or 138% */
+
+text-align: center;
+color: #172B4D;
+padding-bottom:350px
+}
