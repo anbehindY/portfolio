@@ -430,10 +430,13 @@ h4 {
   line-height: 50px;
   margin-top: 20px;
 }
+
 /**************************contact form********************************************/
+
 .contact-form{
   padding: 120px 24px 124px 24px;
 }
+
 .contact-form h1{
   width: 327px;
   height: 216px;
@@ -465,6 +468,21 @@ fieldset {
   height: 30px;
   padding-bottom: 10px;
 }
+
+textarea {
+  height: 114px;
+  width: 327px;
+  text-indent: 10px;
+  background: #fbf8f7;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   display: flex;
   justify-content: center;
@@ -484,11 +502,10 @@ button {
   letter-spacing: 0.03em;
 }
 
-textarea {
-  height: 114px;
-  width: 327px;
-  text-indent: 10px;
-  background: #FBF8F7;
-  line-height: 30px;
-  margin-bottom: 12px;
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  padding: 27px 10% 30px 10%;
 }
