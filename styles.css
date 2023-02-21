@@ -38,7 +38,7 @@ main {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
-  height: 94vh;
+  height: 95vh;
   background-image: url("Images/matrix.svg");
   background-repeat: no-repeat;
   background-position: 100% 120%;
