@@ -430,27 +430,28 @@ h4 {
   line-height: 50px;
   margin-top: 20px;
 }
-/**************************contct form********************************************/
+/**************************contact form********************************************/
+.contact-form{
+  padding: 120px 24px 124px 24px;
+}
 .contact-form h1{
   width: 327px;
-height: 216px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-/* or 138% */
-
-text-align: center;
-color: #172B4D;
-padding-bottom:350px
+  height: 216px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom:73px;
 }
+
 button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
+  padding: 12px 0;
   gap: 10px;
   width: 131px;
   height: 48px;
