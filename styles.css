@@ -7,6 +7,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 14%;
   background: #3c3a39;
   padding: 0 24px;
@@ -33,6 +34,10 @@ header {
 #hamburger {
   display: flex;
   align-items: center;
+}
+
+.top-nav {
+  display: none;
 }
 
 main {
@@ -229,12 +234,11 @@ h4 {
   display: flex;
   flex-direction: column;
   margin: 76px 0 62px 0;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    );
+  background: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  );
 }
 
 .heading {
@@ -535,17 +539,65 @@ footer {
 }
 
 @media (min-width: 768px) {
+
+  body {
+    background: #3c3a39;;
+  }
+
   header {
-    height: 7%;
+    height: 8vh;
+    background: #3c3a39;
+  }
+
+  #name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: auto;
+    height: 20px;
+    padding-left: 8%;
+  }
+
+  .toolbar {
+    width: 30%;
+    padding: 0 8%;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 1.5em;
+  }
+
+  .nav-items {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .nav-items:last-child a img {
+    padding-top: 5px;
   }
 
   main {
     background: url(Desktop_icons/main-background.svg), #1c1a19;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    height: 100vh;
+    background-position: 100% -9vh;
+    background-size: 45%;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 30% 60%;
     grid-template-rows: 20% 15% 30% 15% 20%;
     align-items: center;
   }
@@ -562,27 +614,21 @@ footer {
 
   .headline-section > h1 {
     font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
-    width: inherit;
-    height: 160px;
+    font-size: 3.5em;
     margin: 0;
   }
 
   .headline-section > h4 {
-    width: inherit;
-    height: 24px;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 1);
+    display: inline;
+    margin: 0;
   }
 
   #description {
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
-    width: 36%;
-    height: 123px;
   }
 
   .socials {
