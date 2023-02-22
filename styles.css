@@ -455,10 +455,6 @@ fieldset {
   padding-left: 5%;
 }
 
-input:focus,
-textarea:focus {
-  outline: none;
-}
 
 #name,
 #email {
@@ -478,7 +474,6 @@ textarea {
   height: 114px;
   width: 327px;
   background: #fbf8f7;
-  line-height: 30px;
   margin-bottom: 12px;
   color: rgba(60, 58, 57, 1);
   font-family: 'Inter', sans-serif;
@@ -487,6 +482,11 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   padding: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 form div {
