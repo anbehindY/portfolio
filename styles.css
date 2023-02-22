@@ -17,7 +17,7 @@ header {
   display: inline;
   min-width: 77px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -38,7 +38,7 @@ main {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
-  height: 94vh;
+  height: 95vh;
   background-image: url("Images/matrix.svg");
   background-repeat: no-repeat;
   background-position: 100% 120%;
@@ -55,7 +55,7 @@ h1 {
   min-width: 327px;
   height: 124px;
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -69,7 +69,7 @@ h1 {
 
 h4 {
   color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -84,7 +84,7 @@ h4 {
 
 #description {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -136,7 +136,7 @@ h4 {
   font-style: normal;
   font-weight: 300;
   font-size: 11.5vw;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   text-align: center;
   color: #1c1a19;
   padding-bottom: 0 24px 24px 24px;
@@ -167,7 +167,7 @@ h4 {
 }
 
 #main-text {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 32px;
   font-style: normal;
@@ -175,7 +175,7 @@ h4 {
 }
 
 #support-text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -197,7 +197,7 @@ h4 {
   width: auto;
   height: 40px;
   border: 1px solid #8993a4;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -212,7 +212,7 @@ h4 {
   height: 48px;
   margin-top: 22px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -242,11 +242,16 @@ h4 {
   display: flex;
   flex-direction: column;
   margin: 76px 0 62px 0;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    );
 }
 
 .heading {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -256,7 +261,7 @@ h4 {
 
 .support-text {
   margin: 0 16px 12px 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -279,7 +284,7 @@ h4 {
   padding: 2% 3%;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -292,7 +297,7 @@ h4 {
 }
 
 .project-button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
@@ -341,7 +346,7 @@ h4 {
 }
 
 #text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -366,7 +371,7 @@ h4 {
   height: 48px;
   color: rgba(255, 255, 255, 1);
   background: rgba(255, 107, 0, 1);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -390,7 +395,7 @@ h4 {
 }
 
 #language {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -401,7 +406,7 @@ h4 {
 }
 
 #frameworks {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -412,7 +417,7 @@ h4 {
 }
 
 #skills {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -423,10 +428,121 @@ h4 {
 }
 
 .nested {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 50px;
   margin-top: 20px;
+}
+
+.contact-form {
+  padding: 120px 24px 124px 24px;
+}
+
+#ch-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-header {
+  width: 327px;
+  height: 216px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 100px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid rgba(219, 216, 215, 1);
+  margin-bottom: 24px;
+  padding-left: 5%;
+}
+
+#fullname,
+#email {
+  border: none;
+  color: #979493;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  padding: 15px 0 25px 0;
+  width: 90%;
+}
+
+textarea {
+  height: 114px;
+  width: 100%;
+  margin-bottom: 12px;
+  color: rgba(60, 58, 57, 1);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 5%;
+  border: none;
+  background: url(icons/Resizer\ Handle.svg), #fbf8f7;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  border: none;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  padding: 27px 10% 13px 10%;
+}
+
+#black-bar {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
