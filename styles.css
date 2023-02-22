@@ -440,6 +440,11 @@ h4 {
   padding: 120px 24px 124px 24px;
 }
 
+#ch-container {
+  display: flex;
+  justify-content: center;
+}
+
 #contact-header {
   width: 327px;
   height: 216px;
@@ -460,7 +465,7 @@ fieldset {
   padding-left: 5%;
 }
 
-#name,
+#fullname,
 #email {
   border: none;
   color: #979493;
