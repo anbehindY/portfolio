@@ -459,6 +459,7 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
 #name,
 #email {
   border: none;
