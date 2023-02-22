@@ -450,7 +450,8 @@ h4 {
 
 fieldset {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(219, 216, 215, 1);
+  ;
   margin-bottom: 24px;
   padding-left: 5%;
 }
