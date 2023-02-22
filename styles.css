@@ -476,7 +476,7 @@ fieldset {
 
 textarea {
   height: 114px;
-  width: 327px;
+  width: 100%;
   margin-bottom: 12px;
   color: rgba(60, 58, 57, 1);
   font-family: "Inter", sans-serif;
@@ -484,7 +484,7 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding: 15px;
+  padding: 5%;
   border: none;
   background: url(icons/Resizer\ Handle.svg), #fbf8f7;
   background-repeat: no-repeat;
