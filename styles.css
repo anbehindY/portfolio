@@ -7,20 +7,21 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 44px;
+  height: 14%;
   background: #3c3a39;
   padding: 0 24px;
   align-items: center;
+  justify-self: flex-start;
 }
 
 #name {
   display: inline;
-  min-width: 77px;
+  width: 77px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 24px;
 }
 
@@ -35,24 +36,18 @@ header {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  background: #1c1a19;
-  height: 95vh;
-  background-image: url("Images/matrix.svg");
+  height: 96vh;
+  background: url("Images/matrix.svg"), #1c1a19;
   background-repeat: no-repeat;
-  background-position: 100% 120%;
-  padding: 120px 24px 0 24px;
+  background-position: 100% 110%;
 }
 
 .headline-section {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
+  padding: 120px 24px 0 24px;
 }
 
 h1 {
-  min-width: 327px;
+  width: 327px;
   height: 124px;
   color: #ff6b00;
   font-family: "Crete Round", serif;
@@ -76,9 +71,6 @@ h4 {
   line-height: 32px;
   height: 27px;
   min-width: 327px;
-  order: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
   margin-bottom: 12px;
 }
 
@@ -89,9 +81,6 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   min-width: 327px;
-  order: 2;
-  flex-grow: 1;
-  flex-shrink: 1;
   margin-bottom: 12px;
 }
 
@@ -100,16 +89,11 @@ h4 {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  order: 3;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.socials ul {
   list-style: none;
+  padding-left: 12px;
 }
 
-.socials ul li {
+.socials li {
   display: inline;
 }
 
@@ -124,22 +108,25 @@ h4 {
 }
 
 #heading {
-  width: 90%;
-  height: 83px;
+  width: 85%;
   justify-self: center;
   border-bottom: 1px solid #212121;
   padding-bottom: 24px;
   grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #heading h1 {
   font-style: normal;
   font-weight: 300;
-  font-size: 11.5vw;
+  font-size: 2.6em;
   font-family: "Crete Round", serif;
   text-align: center;
   color: #1c1a19;
   padding-bottom: 0 24px 24px 24px;
+  height: 10px;
 }
 
 #first-project {
@@ -545,4 +532,64 @@ footer {
   background: #0d151e;
   border-radius: 10px;
   margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 7%;
+  }
+
+  main {
+    background: url(Desktop_icons/main-background.svg), #1c1a19;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 20% 15% 30% 15% 20%;
+    align-items: center;
+  }
+
+  .headline-section {
+    grid-column: 2/3;
+    grid-row: 1/5;
+    align-self: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .headline-section > h1 {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    width: inherit;
+    height: 160px;
+    margin: 0;
+  }
+
+  .headline-section > h4 {
+    width: inherit;
+    height: 24px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  #description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 36%;
+    height: 123px;
+  }
+
+  .socials {
+    flex-direction: column;
+    width: 10%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    padding: 30%;
+  }
 }
