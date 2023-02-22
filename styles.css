@@ -451,7 +451,6 @@ h4 {
 fieldset {
   border: none;
   border-bottom: 1px solid rgba(219, 216, 215, 1);
-  ;
   margin-bottom: 24px;
   padding-left: 5%;
 }
@@ -482,6 +481,15 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   padding: 15px;
+  border: none;
+}
+
+textarea::-webkit-resizer {
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  outline: 2px solid yellow;
+  background: red;
 }
 
 input:focus,
@@ -512,10 +520,24 @@ button {
   letter-spacing: 0.03em;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logos {
   display: flex;
   list-style: none;
   gap: 25px;
   justify-content: center;
-  padding: 27px 10% 30px 10%;
+  padding: 27px 10% 13px 10%;
+}
+
+#black-bar {
+  width: 134px;
+  height: 5px;
+  background: #0D151E;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
