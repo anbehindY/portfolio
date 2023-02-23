@@ -356,8 +356,8 @@ h4 {
   height: 59px;
 }
 
-#head:hover{
-  transform: translate(10px,10px);
+#head:hover {
+  transform: translate(10px, 10px);
 }
 
 #text {
