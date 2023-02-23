@@ -159,6 +159,10 @@ h4 {
   background-size: auto;
 }
 
+#yoga-img:hover {
+  transform: scale(1.1);
+}
+
 #card {
   display: flex;
   flex-direction: column;
@@ -217,10 +221,12 @@ h4 {
   font-weight: 700;
   font-size: 17px;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 #project-button:hover {
-  background-color: #091e42;
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
 }
 
 .card-container {
@@ -310,7 +316,8 @@ h4 {
 }
 
 .project-button:hover {
-  background-color: #091e42;
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
 }
 
 .about-me {
