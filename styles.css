@@ -51,7 +51,7 @@ main {
   padding: 120px 24px 0 24px;
 }
 
-h1 {
+.headline-section h1 {
   width: 327px;
   height: 124px;
   color: #ff6b00;
@@ -67,7 +67,7 @@ h1 {
   margin-bottom: 12px;
 }
 
-h4 {
+.headline-section h4 {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -106,39 +106,31 @@ h4 {
   display: grid;
   background: #fff;
   align-content: center;
-  justify-content: center;
-  grid-template-rows: 120px 107px 80px 568px 2556px;
+  justify-items: center;
+  grid-template-rows: 120px 1px 80px 600px 2700px;
   grid-template-columns: 100%;
-  padding-bottom: 160px;
+}
+
+#bar {
+  width: 85%;
+  height: 1px;
+  background-color: #212121;
+  grid-row: 2/3;
 }
 
 #heading {
-  width: 85%;
-  justify-self: center;
-  border-bottom: 1px solid #212121;
-  padding-bottom: 24px;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#heading h1 {
   font-style: normal;
   font-weight: 300;
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-family: "Crete Round", serif;
-  text-align: center;
   color: #1c1a19;
-  padding-bottom: 0 24px 24px 24px;
-  height: 10px;
+  grid-row: 1/2;
 }
 
 #first-project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100vh;
   align-items: center;
   grid-row: 4/5;
 }
