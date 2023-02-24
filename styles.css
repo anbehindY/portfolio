@@ -156,7 +156,6 @@ main {
   font-weight: 400;
   font-size: 32px;
   font-style: normal;
-  height: 36px;
 }
 
 #support-text {
@@ -166,7 +165,6 @@ main {
   font-size: 16px;
   color: #091e42;
   width: 327px;
-  height: 130px;
   margin-top: 12px;
   line-height: 24px;
 }
@@ -219,7 +217,6 @@ main {
   width: 327px;
   height: 386px;
   background: url(Images/papd.svg);
-  background-repeat: no-repeat;
   margin: 24px 0;
 }
 
@@ -227,11 +224,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: 76px 0 62px 0;
-  background: linear-gradient(
-    180.45deg,
-    rgba(38, 38, 38, 0) 0.75%,
-    rgba(38, 38, 38, 0.9) 61.94%
-  );
 }
 
 .heading {
@@ -274,7 +266,6 @@ main {
   font-size: 15px;
   color: rgba(255, 255, 255, 1);
   width: auto;
-  height: 40px;
   display: inline;
   list-style: none;
   margin-right: 12px;
@@ -291,6 +282,7 @@ main {
   height: 48px;
   padding: 12px;
   text-align: center;
+  margin-top: -37px;
 }
 
 .project-button:hover {
@@ -384,9 +376,6 @@ main {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  background: url(Images/square-2.svg);
-  background-repeat: no-repeat;
-  background-position: 20% 4%;
 }
 
 #frameworks {
@@ -395,9 +384,6 @@ main {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  background: url(Images/square.svg);
-  background-repeat: no-repeat;
-  background-position: 13% 4%;
 }
 
 #skills {
@@ -406,9 +392,6 @@ main {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  background: url(Images/circle.svg);
-  background-repeat: no-repeat;
-  background-position: 32% 4%;
 }
 
 .nested {
@@ -634,13 +617,14 @@ footer {
 
   .work-section {
     grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 0.5fr 4fr 18fr;
-    padding: 10% 5% 210px 5%;
+    grid-template-rows: 0.5fr 0.5fr 2fr 5fr;
+    padding: 10% 10% 0 10%;
   }
 
   #heading-bar {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
     gap: 1.5%;
   }
@@ -648,83 +632,193 @@ footer {
   #heading {
     grid-row: 1/2;
     grid-column: 1/2;
-    font-size: 1.7vw;
+    font-size: 2.1vw;
     margin: 0;
-    width: 14vw;
+    width: 17vw;
     display: inline;
   }
 
   #bar {
     grid-row: 1/2;
     grid-column: 2/4;
-    width: 75vw;
+    width: 60vw;
   }
 
   #first-project {
     grid-row: 3/4;
+    grid-column: 1/2;
     flex-direction: row;
     width: 90vw;
-    gap: 10px;
+    gap: 2%;
     align-items: flex-start;
-    justify-items: stretch;
+    justify-content: flex-start;
+    /* padding: 0 6.3%; */
   }
 
   #yoga-img {
-    width: 100vw;
+    width: 60%;
+    background: url(Desktop_icons/YOGA.svg);
+    background-repeat: no-repeat;
     background-size: contain;
-    flex: 1;
+    background-position: 70% 0;
   }
   
   #card {
     margin: 0;
     justify-self: flex-start;
-    width: 50vw;
     padding-bottom: 10%;
-    flex: 1;
   }
 
   #main-text {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   #support-text {
-    font-size: 0.9em;
-    margin: 0;
-    height: min-content;
+    font-size: 1em;
+    margin-top: 5%;
+    line-height: normal;
   }
 
   .tech-box {
-    /* margin-top: 10px; */
+    margin-top: 5%;
   }
 
   #project-button {
-    /* margin-top: 12px; */
+    margin-top: 5%;
+    height: min-content;
   }
 
   .card-container {
     grid-row: 4/5;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 5%;
+    align-content: flex-start;
     justify-content: space-between;
+    padding-bottom: 8%;
   }
 
-  .project-button:nth-of-type(2n){
+  .card {
+    width: 369px;
+    height: 435px;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .card .description {
+    margin-bottom: 15px;
+  }
+
+  .card .description .heading {
     /* display: none; */
+    /* visibility: hidden; */
   }
 
-  /* .project-button #gg {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 17px;
-    background: #ff6b00;
-    color: #fff;
-    width: 327px;
-    height: 48px;
-    padding: 12px;
-    text-align: center;
+  /* .card.healthCare > .description > .heading::after {
+    content: `Data Dashboard
+     Healthcare`;
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    left: 50px;
   } */
+  .card.unique {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(Desktop_icons/papdwhite.svg);
+    border: 2px solid black;
+    background-repeat: no-repeat;
+  }
 
-  
+  .card.unique .description {
+    display: none;
+   
+  }
+
+  .card.unique > .project-button {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .card.healthCare {
+    background: url(Desktop_icons/healthCare.svg);
+  }
+
+  .card.website {
+    background: url(Desktop_icons/website.svg);
+  }
+
+  .card.more {
+    background: url(Desktop_icons/papg.svg);
+  }
+  .website > .project-button,
+  .more > .project-button,
+  .healthCare > .project-button {
+    display: none;
+  }
+
+  .tech-stack {
+    display: flex;
+    align-items: center;
+    
+  }
+  .tech-stack ul {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+  }
+
+  .about-me {
+    padding: 0 10%;
+    background: url(Desktop_icons/aboutme.svg), url(Desktop_icons/aboutme@2x.svg), #262626;
+    background-repeat: no-repeat;
+    background-position: 100% 9%;
+    grid-template-rows: 563px 89px 600px;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    background-image: none;
+  }
+
+  #head > h1 {
+    margin: 0;
+    height: 65px;
+  }
+  #text {
+    margin: 0;
+    height: fit-content;
+    width: 39%;
+    line-height: 30px;
+  }
+
+  #resume {
+    margin: 0;
+    width: fit-content;
+  }
+  #devider {
+    width: 100%;
+  }
+
+  .skill {
+    width: 100%;
+  }
+  .skill ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    list-style: none;
+    
+  }
+
+  .nested {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+  }
 }
