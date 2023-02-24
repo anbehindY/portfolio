@@ -203,7 +203,18 @@ main {
 }
 
 #project-button:hover {
-  background-color: #091e42;
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+#project-button:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+#project-button:disabled {
+  background: rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
 
 .card-container {
@@ -286,7 +297,18 @@ main {
 }
 
 .project-button:hover {
-  background-color: #091e42;
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+.project-button:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+.project-button:disabled {
+  background: rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
 
 .about-me {
@@ -359,7 +381,18 @@ main {
 }
 
 #resume:hover {
-  background-color: #091e42;
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+#resume:active {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+#resume:disabled {
+  background: rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
 
 .skill {
@@ -495,6 +528,21 @@ button {
   color: #fff;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+button:hover {
+  background: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
+}
+
+button:focus {
+  background: rgba(224, 83, 4, 1);
+  color: rgba(244, 241, 240, 1);
+}
+
+button:disabled {
+  background: rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
 
 footer {
