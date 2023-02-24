@@ -530,7 +530,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     width: auto;
     height: 20px;
@@ -559,7 +559,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: rgba(255, 255, 255, 1);
   }
@@ -710,6 +710,12 @@ footer {
     margin-bottom: 15px;
   }
 
+  .website .project-button,
+  .more .project-button,
+  .healthCare .project-button {
+    display: none;
+  }
+
   .card.unique {
     display: flex;
     flex-direction: column;
@@ -724,7 +730,7 @@ footer {
   }
 
   .card.unique > .project-button {
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
   }
 
@@ -740,12 +746,6 @@ footer {
     background: url(Desktop_icons/papg.svg);
   }
 
-  .website > .project-button,
-  .more > .project-button,
-  .healthCare > .project-button {
-    display: none;
-  }
-
   .tech-stack {
     display: flex;
     align-items: center;
@@ -759,8 +759,10 @@ footer {
 
   .about-me {
     padding: 0 10%;
-    background: url(Desktop_icons/aboutme.svg),
-      url(Desktop_icons/aboutme@2x.svg), #262626;
+    background:
+      url(Desktop_icons/aboutme.svg),
+      url(Desktop_icons/aboutme@2x.svg),
+      #262626;
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: 100% 9%;
