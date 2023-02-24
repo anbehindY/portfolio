@@ -442,7 +442,7 @@ fieldset {
   font-size: 15px;
   line-height: 30px;
   height: 30px;
-  padding: 15px 0 25px 0;
+  padding: 15px 10px 25px 10px;
   width: 90%;
 }
 
@@ -456,7 +456,7 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding: 5%;
+  padding: 10px;
   border: none;
   background: url(icons/Resizer\ Handle.svg), #fbf8f7;
   background-repeat: no-repeat;
@@ -514,10 +514,11 @@ footer {
   margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
+/* For screen size larger than 768px */
 
+@media (min-width: 768px) {
   body {
-    background: #3c3a39;;
+    background: #3c3a39;
   }
 
   header {
@@ -554,7 +555,7 @@ footer {
   }
 
   .nav-items {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -618,7 +619,7 @@ footer {
   .work-section {
     grid-template-columns: 100%;
     grid-template-rows: 0.5fr 0.5fr 2fr 5fr;
-    padding: 10% 10% 0 10%;
+    padding: 10% 8% 0 8%;
   }
 
   #heading-bar {
@@ -626,51 +627,51 @@ footer {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    gap: 1.5%;
+    padding-left: 2%;
   }
 
   #heading {
     grid-row: 1/2;
     grid-column: 1/2;
-    font-size: 2.1vw;
+    font-size: 2.9vw;
     margin: 0;
-    width: 17vw;
+    width: 30%;
     display: inline;
   }
 
   #bar {
     grid-row: 1/2;
     grid-column: 2/4;
-    width: 60vw;
+    width: 69%;
   }
 
   #first-project {
     grid-row: 3/4;
     grid-column: 1/2;
     flex-direction: row;
-    width: 90vw;
+    width: 100%;
     gap: 2%;
     align-items: flex-start;
     justify-content: flex-start;
-    /* padding: 0 6.3%; */
   }
 
   #yoga-img {
-    width: 60%;
+    width: 100%;
     background: url(Desktop_icons/YOGA.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 70% 0;
+    background-position: 25% 0;
   }
-  
+
   #card {
+    width: 70%;
     margin: 0;
     justify-self: flex-start;
     padding-bottom: 10%;
   }
 
   #main-text {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
 
   #support-text {
@@ -695,6 +696,7 @@ footer {
     align-content: flex-start;
     justify-content: space-between;
     padding-bottom: 8%;
+    width: 97%;
   }
 
   .card {
@@ -708,19 +710,6 @@ footer {
     margin-bottom: 15px;
   }
 
-  .card .description .heading {
-    /* display: none; */
-    /* visibility: hidden; */
-  }
-
-  /* .card.healthCare > .description > .heading::after {
-    content: `Data Dashboard
-     Healthcare`;
-    visibility: visible;
-    display: inline;
-    position: absolute;
-    left: 50px;
-  } */
   .card.unique {
     display: flex;
     flex-direction: column;
@@ -732,7 +721,6 @@ footer {
 
   .card.unique .description {
     display: none;
-   
   }
 
   .card.unique > .project-button {
@@ -751,6 +739,7 @@ footer {
   .card.more {
     background: url(Desktop_icons/papg.svg);
   }
+
   .website > .project-button,
   .more > .project-button,
   .healthCare > .project-button {
@@ -760,8 +749,8 @@ footer {
   .tech-stack {
     display: flex;
     align-items: center;
-    
   }
+
   .tech-stack ul {
     display: flex;
     width: fit-content;
@@ -770,8 +759,10 @@ footer {
 
   .about-me {
     padding: 0 10%;
-    background: url(Desktop_icons/aboutme.svg), url(Desktop_icons/aboutme@2x.svg), #262626;
+    background: url(Desktop_icons/aboutme.svg),
+      url(Desktop_icons/aboutme@2x.svg), #262626;
     background-repeat: no-repeat;
+    background-size: 40%;
     background-position: 100% 9%;
     grid-template-rows: 563px 89px 600px;
   }
@@ -789,6 +780,7 @@ footer {
     margin: 0;
     height: 65px;
   }
+
   #text {
     margin: 0;
     height: fit-content;
@@ -800,6 +792,7 @@ footer {
     margin: 0;
     width: fit-content;
   }
+
   #devider {
     width: 100%;
   }
@@ -807,12 +800,12 @@ footer {
   .skill {
     width: 100%;
   }
+
   .skill ul {
     display: flex;
     justify-content: flex-start;
     gap: 10%;
     list-style: none;
-    
   }
 
   .nested {
@@ -820,5 +813,46 @@ footer {
     flex-direction: column;
     list-style: none;
     align-items: flex-start;
+  }
+
+  .contact-form {
+    background-color: #fff;
+    padding-left: 3.8%;
+    padding-right: 3.8%;
+  }
+
+  footer {
+    background-color: #fff;
+  }
+
+  form {
+    display: flex;
+    padding: 0 60px;
+  }
+
+  #ch-container {
+    width: 455px;
+  }
+
+  #contact-header {
+    text-align: left;
+    width: 380px;
+    font-size: 2.3em;
+    display: inline;
+  }
+
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 24px;
+    width: 65%;
+  }
+
+  fieldset {
+    height: fit-content;
+    padding: 0;
+    width: 100%;
   }
 }
