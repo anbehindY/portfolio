@@ -425,6 +425,11 @@ main {
   margin-bottom: 100px;
 }
 
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
 fieldset {
   border: none;
   border-bottom: 1px solid rgba(219, 216, 215, 1);
@@ -442,7 +447,7 @@ fieldset {
   font-size: 15px;
   line-height: 30px;
   height: 30px;
-  padding: 15px 10px 25px 10px;
+  padding: 15px 0 25px 0;
   width: 90%;
 }
 
@@ -456,7 +461,7 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding: 10px;
+  padding: 15px;
   border: none;
   background: url(icons/Resizer\ Handle.svg), #fbf8f7;
   background-repeat: no-repeat;
