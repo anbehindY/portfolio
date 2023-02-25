@@ -1,290 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Setup</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!--The first page-->
     <header>
-        <div id="name"><a href="#">John Doe</a></div>
-        <nav class="toolbar">
-            <a id="hamburger" href="#"><img src="icons/menu.svg" alt="menu logo"></a>
-        </nav>
+      <div id="name"><a href="#">John Doe</a></div>
+      <nav class="toolbar">
+        <a id="hamburger" href="#"
+          ><img src="icons/menu.svg" alt="menu logo"
+        /></a>
+        <ul class="top-nav">
+          <li class="nav-items"><a>Portfolio</a></li>
+          <li class="nav-items"><a>About</a></li>
+          <li class="nav-items"><a>Contact</a></li>
+          <li class="nav-items">
+            <a><img src="Desktop_icons/Mail.svg" alt="mail logo" /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="headline-section">
-            <h1>Hey There.<br>I’m Alex</h1>
-            <h4>I’am a Software Developer</h4>
-            <p id="description">I can help you build a product , feature or website Look through some of my work and
-                experience! If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.</p>
-            <div class="socials">
-                <ul>
-                    <li>
-                        <a class="social" href=""><img src="icons/github.svg" alt="Github logo" /></a>
-                    </li>
-                    <li>
-                        <a class="social" href=""><img src="icons/linkedin.svg" alt="Linkedin logo" /></a>
-                    </li>
-                    <li>
-                        <a class="social" href=""><img src="icons/angelist.svg" alt="Angelist logo" /></a>
-                    </li>
-                    <li>
-                        <a class="social" href=""><img src="icons/twitter.svg" alt="Twitter logo" /></a>
-                    </li>
-                    <li>
-                        <a class="social" href=""><img src="icons/medium.svg" alt="Medium logo" /></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <section class="headline-section">
+        <h1>Hey There.<br />I’m Alex</h1>
+        <h4>I’am a Software Developer</h4>
+        <p id="description">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+      </section>
+      <ul class="socials">
+        <li>
+          <a class="social" href=""
+            ><img src="icons/github.svg" alt="Github logo"
+          /></a>
+        </li>
+        <li>
+          <a class="social" href=""
+            ><img src="icons/linkedin.svg" alt="Linkedin logo"
+          /></a>
+        </li>
+        <li>
+          <a class="social" href=""
+            ><img src="icons/angelist.svg" alt="Angelist logo"
+          /></a>
+        </li>
+        <li>
+          <a class="social" href=""
+            ><img src="icons/twitter.svg" alt="Twitter logo"
+          /></a>
+        </li>
+        <li>
+          <a class="social" href=""
+            ><img src="icons/medium.svg" alt="Medium logo"
+          /></a>
+        </li>
+      </ul>
     </main>
+    <!--Work section-->
     <section class="work-section">
-        <div id="heading">
-            <h1>My Recent Work</h1>
-        </div>
-        <div id="first-project">
-            <div id="yoga-img"></div>
-            <div id="card">
-                <div id="main-text">
-                    <h3>Multi-Post Stories</h3>
-                </div>
-                <div id="support-text">
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
-                        dummy text.
-                    </p>
-                </div>
-                <div class="tech-box">
-                    <ul>
-                        <li>css</li>
-                        <li>html</li>
-                        <li>bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <div id="project-button">See Project</div>
-            </div>
-        </div>
-        <section class="card-container">
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-            <div class="card">
-                <div class="description">
-                    <div class="heading">Profesional Art Printing Data</div>
-                    <div class="support-text">
-                        <p>
-                            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                            been the industry's standard
-                        </p>
-                    </div>
-                    <div class="tech-stack">
-                        <ul>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-button">See Project</div>
-            </div>
-        </section>
-    </section>
-    <section class="about-me">
-        <div id="about-me">
-            <div id="head">
-                <h1>About me</h1>
-            </div>
-            <div id="text">
-                <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some
-                    of my work and experience! If you like what you see and have a project you need coded, don’t
-                    hestiate to contact me.</p>
-            </div>
-            <div id="resume">
-                Get My Resume
-            </div>
-        </div>
-        <div id="devider"></div>
-        <div class="skill">
+      <div id="heading-bar">
+        <h1 id="heading">My Recent Works</h1>
+        <div id="bar"></div>
+      </div>
+      <div id="first-project">
+        <div id="yoga-img"></div>
+        <div id="card">
+          <div id="main-text">
+            <h3>Multi-Post Stories</h3>
+          </div>
+          <div id="support-text">
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+          <div class="tech-box">
             <ul>
-                <li id="language">Language
-                    <ul class="nested">
-                        <li>Javascript</li>
-                        <li>Ruby</li>
-                        <li>Html</li>
-                        <li>Css</li>
-                    </ul>
-                </li>
-                <br>
-                <li id="frameworks">Frameworks
-                    <ul class="nested">
-                        <li>Bootstrap</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSPec</li>
-                        <li>CapyBara</li>
-                        <li>Selenium</li>
-                    </ul>
-                </li>
-                <br>
-                <li id="skills">Skills
-                    <ul class="nested">
-                        <li>Codekit</li>
-                        <li>Github</li>
-                        <li>Codepen</li>
-                        <li>Gitlab</li>
-                        <li>Terminal</li>
-                    </ul>
-                </li>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
             </ul>
+          </div>
+          <div id="project-button">See Project</div>
         </div>
+      </div>
+      <!--The project cards-->
+      <section class="card-container">
+        <div class="card more">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+        <div class="card healthCare">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+        <div class="card website">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+        <div class="card more">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+        <div class="card healthCare">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+        <div class="card website">
+          <div class="description">
+            <div class="heading">Profesional Art Printing Data</div>
+            <div class="support-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="tech-stack">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-button">See Project</div>
+        </div>
+      </section>
+    </section>
+    <!--About me section-->
+    <section class="about-me">
+      <div id="about-me">
+        <div id="head">
+          <h1>About me</h1>
+        </div>
+        <div id="text">
+          <p>
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+        </div>
+        <div id="resume">Get My Resume</div>
+      </div>
+      <div id="devider"></div>
+      <div class="skill">
+        <ul>
+          <li id="language">
+            <img src="Images/square-2.svg" alt="list logo" /> Language
+            <ul class="nested">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </li>
+          <br />
+          <li id="frameworks">
+            <img src="Images/square.svg" alt="second list logo" /> Frameworks
+            <ul class="nested">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+          <br />
+          <li id="skills">
+            <img src="Images/circle.svg" alt="last list logo" /> Skills
+            <ul class="nested">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
     <!--Contact-form-section-->
     <section class="contact-form">
-        <form action="https://formspree.io/f/xayzobow" method="post" >
-            <div id="ch-container">
-                <h1 id="contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
-            </div>
-        <fieldset>
+      <form action="https://formspree.io/f/xayzobow" method="post">
+        <div id="ch-container">
+          <h1 id="contact-header">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h1>
+        </div>
+        <div id="inputs">
+          <fieldset>
             <label for="fullname">
-                <input id="fullname" name="name" type="name" placeholder="Full name" maxlength="30" required />
+              <input
+                id="fullname"
+                name="name"
+                type="name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
             </label>
-        </fieldset>
-        <fieldset>
+          </fieldset>
+          <fieldset>
             <label for="email">
-                <input id="email" name="email_address" type="email" placeholder="Email address" required />
+              <input
+                id="email"
+                name="email_address"
+                type="email"
+                placeholder="Email address"
+                required
+              />
             </label>
-        </fieldset>
-            <textarea id="message" name="message_box" type="text" placeholder="Enter text here" maxlength="500" rows="1" cols="1" required ></textarea>
-            <div>
-                <button type="submit" value="Get in touch">Get in touch</button>
-            </div>
-        </form>
+          </fieldset>
+          <textarea
+            id="message"
+            name="message_box"
+            type="text"
+            placeholder="Enter text here"
+            maxlength="500"
+            rows="1"
+            cols="1"
+            required
+          ></textarea>
+          <div>
+            <button type="submit" value="Get in touch">Get in touch</button>
+          </div>
+        </div>
+      </form>
     </section>
-    <hr>
+    <hr />
     <footer>
-            <ul class="logos">
-                <li>
-                    <a class="logo" href=""><img src="icons/github1.svg" alt="Github logo" /></a>
-                </li>
-                <li>
-                    <a class="logo" href=""><img src="icons/linkedin1.svg" alt="Linkedin logo" /></a>
-                </li>
-                <li>
-                    <a class="logo" href=""><img src="icons/angelist1.svg" alt="Angelist logo" /></a>
-                </li>
-                <li>
-                    <a class="logo" href=""><img src="icons/twitter1.svg" alt="Twitter logo" /></a>
-                </li>
-                <li>
-                    <a class="logo" href=""><img src="icons/medium1.svg" alt="Medium logo" /></a>
-                </li>
-            </ul>
-            <div id="black-bar"></div>
+      <ul class="logos">
+        <li>
+          <a class="logo" href=""
+            ><img src="icons/github1.svg" alt="Github logo"
+          /></a>
+        </li>
+        <li>
+          <a class="logo" href=""
+            ><img src="icons/linkedin1.svg" alt="Linkedin logo"
+          /></a>
+        </li>
+        <li>
+          <a class="logo" href=""
+            ><img src="icons/angelist1.svg" alt="Angelist logo"
+          /></a>
+        </li>
+        <li>
+          <a class="logo" href=""
+            ><img src="icons/twitter1.svg" alt="Twitter logo"
+          /></a>
+        </li>
+        <li>
+          <a class="logo" href=""
+            ><img src="icons/medium1.svg" alt="Medium logo"
+          /></a>
+        </li>
+      </ul>
+      <div id="black-bar"></div>
     </footer>
-</body>
-
+  </body>
 </html>
