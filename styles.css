@@ -27,7 +27,7 @@ header {
 }
 
 #name:hover {
-  transform: rotate(10deg);
+  transform: rotate(3deg);
 }
 
 #name a {
@@ -149,7 +149,7 @@ main {
 }
 
 #yoga-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 #card {
@@ -772,10 +772,6 @@ footer {
     display: flex;
   }
 
-  .card .description {
-    margin-bottom: 15px;
-  }
-
   .card.healthCare {
     background: url(Desktop_icons/healthCare.svg);
   }
@@ -786,6 +782,14 @@ footer {
 
   .card.more {
     background: url(Desktop_icons/papg.svg);
+  }
+
+  .card .description {
+    margin-bottom: 15px;
+  }
+
+  .card > .project-button {
+    visibility: hidden;
   }
 
   .card:hover {
@@ -801,9 +805,6 @@ footer {
     display: none;
   }
 
-  .card > .project-button {
-    visibility: hidden;
-  }
   .card:hover > .project-button {
     margin-top: 0;
     width: 100%;
