@@ -353,7 +353,7 @@ main {
 }
 
 #head:hover {
-  transform: translate(10px, 10px);
+  transform: translate(2px, -4px);
 }
 
 #text {
