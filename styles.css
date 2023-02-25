@@ -776,30 +776,6 @@ footer {
     margin-bottom: 15px;
   }
 
-  .website .project-button,
-  .more .project-button,
-  .healthCare .project-button {
-    display: none;
-  }
-
-  .card.unique {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background: url(Desktop_icons/papdwhite.svg);
-    border: 2px solid black;
-    background-repeat: no-repeat;
-  }
-
-  .card.unique .description {
-    display: none;
-  }
-
-  .card.unique > .project-button {
-    margin-top: 0;
-    width: 100%;
-  }
-
   .card.healthCare {
     background: url(Desktop_icons/healthCare.svg);
   }
@@ -810,6 +786,28 @@ footer {
 
   .card.more {
     background: url(Desktop_icons/papg.svg);
+  }
+
+  .card:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(Desktop_icons/papdwhite.svg);
+    border: 2px solid black;
+    background-repeat: no-repeat;
+  }
+
+  .card:hover .description {
+    display: none;
+  }
+
+  .card > .project-button {
+    visibility: hidden;
+  }
+  .card:hover > .project-button {
+    margin-top: 0;
+    width: 100%;
+    visibility: visible;
   }
 
   .tech-stack {
