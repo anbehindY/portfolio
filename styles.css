@@ -484,7 +484,7 @@ fieldset {
   border: none;
   border-bottom: 1px solid rgba(219, 216, 215, 1);
   margin-bottom: 24px;
-  padding-left: 5%;
+  padding-left: 4%;
 }
 
 #fullname,
@@ -497,7 +497,6 @@ fieldset {
   font-size: 15px;
   line-height: 30px;
   height: 30px;
-  padding: 15px 0 25px 0;
   width: 90%;
 }
 
@@ -533,7 +532,6 @@ button {
   display: flex;
   justify-content: center;
   padding: 12px;
-  width: 131px;
   height: 48px;
   border: none;
   background: #ff6b00;
@@ -927,5 +925,10 @@ footer {
     height: fit-content;
     padding: 0;
     width: 100%;
+  }
+
+  #fullname,
+  #email {
+    padding-left: 1.5%;
   }
 }
