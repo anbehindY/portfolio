@@ -822,7 +822,7 @@ footer {
 
   .tech-stack ul {
     display: flex;
-    width: fit-content;
+    width: auto;
     align-items: center;
   }
 
@@ -854,14 +854,14 @@ footer {
 
   #text {
     margin: 0;
-    height: fit-content;
+    height: auto;
     width: 39%;
     line-height: 30px;
   }
 
   #resume {
     margin: 0;
-    width: fit-content;
+    width: auto;
   }
 
   #devider {
@@ -922,7 +922,7 @@ footer {
   }
 
   fieldset {
-    height: fit-content;
+    height: auto;
     padding: 0;
     width: 100%;
   }
