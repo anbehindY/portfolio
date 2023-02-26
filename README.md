@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -41,13 +42,17 @@ This is implemented by referencing some figma templates.
 
 ### Key Features <a name="key-features"></a>
 
-- **To get in touch with Git Hub**
-- **To be more familiar with Git Bash**
-- **Understand how HTML and CSS work together**
+- To be more familiar with Git and Github
+- Understand how HTML and CSS work together
+- Demonstration of Flexbox and Gridbox working together
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
 
+- https://anbehindy.github.io/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -67,17 +72,19 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:
-
+```sh
   cd my-folder
+```
+```sh
   git clone git@github.com:anbehindY/Portfolio_setup.git
-
+```
 
 ### Usage
 
 To run the project, execute the following command:
-
+```sh
   code .
-
+```
 
 
 ### Run tests
