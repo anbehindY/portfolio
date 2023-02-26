@@ -450,6 +450,7 @@ main {
   font-size: 22px;
   line-height: 50px;
   margin-top: 20px;
+  list-style: none;
 }
 
 .contact-form {
