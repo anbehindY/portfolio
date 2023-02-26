@@ -145,7 +145,7 @@ main {
   height: 55vh;
   background: url(Images/yoga.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #yoga-img:hover {
