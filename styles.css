@@ -214,6 +214,7 @@ main {
 #project-button:hover {
   background-color: rgba(255, 245, 225, 1);
   color: rgba(245, 88, 0, 1);
+  cursor: pointer;
 }
 
 #project-button:active {
@@ -308,6 +309,7 @@ main {
 .project-button:hover {
   background-color: rgba(255, 245, 225, 1);
   color: rgba(245, 88, 0, 1);
+  cursor: pointer;
 }
 
 .project-button:active {
@@ -396,6 +398,7 @@ main {
 #resume:hover {
   background-color: rgba(255, 245, 225, 1);
   color: rgba(245, 88, 0, 1);
+  cursor: pointer;
 }
 
 #resume:active {
@@ -546,6 +549,7 @@ button {
 button:hover {
   background: rgba(255, 245, 225, 1);
   color: rgba(245, 88, 0, 1);
+  cursor: pointer;
 }
 
 button:focus {
