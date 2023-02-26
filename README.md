@@ -34,8 +34,8 @@ This is implemented by referencing some figma templates.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- **HTML**
-- **CSS**
+- HTML
+- CSS
 
 
 <!-- Features -->
