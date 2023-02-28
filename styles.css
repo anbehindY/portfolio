@@ -208,7 +208,7 @@ main {
   font-weight: 700;
   font-size: 17px;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #project-button:hover {
