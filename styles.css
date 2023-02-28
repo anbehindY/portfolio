@@ -521,6 +521,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
+  color: #ff6b00;
 }
 
 form div {
@@ -582,6 +583,7 @@ footer {
   border-radius: 10px;
   margin-bottom: 8px;
 }
+
 
 /* For screen size larger than 768px */
 
@@ -935,5 +937,12 @@ footer {
   #fullname,
   #email {
     padding-left: 1.5%;
+
   }
+#fullname:focus,
+  #email:focus{
+    color: #ff6b00;
+    cursor: pointer;
+  }
+  
 }
