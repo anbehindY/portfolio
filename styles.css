@@ -529,12 +529,15 @@ form div {
   justify-content: center;
 }
 
+button {
+  border: none;
+}
+
 #button {
   display: flex;
   justify-content: center;
   padding: 12px;
   height: 48px;
-  border: none;
   background: #ff6b00;
   font-family: "Inter", sans-serif;
   font-style: normal;
