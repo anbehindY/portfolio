@@ -584,7 +584,6 @@ footer {
   margin-bottom: 8px;
 }
 
-
 /* For screen size larger than 768px */
 
 @media (min-width: 768px) {
@@ -937,11 +936,10 @@ footer {
   #fullname,
   #email {
     padding-left: 1.5%;
-
   }
 
   #fullname:focus,
-  #email:focus{
+  #email:focus {
     color: #ff6b00;
     cursor: pointer;
   }
