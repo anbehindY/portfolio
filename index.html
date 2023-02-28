@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Setup</title>
+    <title>Alfilio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,27 +14,27 @@
     />
   </head>
 
-  <body>
-    <!--The first page-->
-    <header>
-      <div id="name"><a href="#">John Doe</a></div>
+  <body id="portfolio">
+    <!--The  first page-->
+    <header title="navigation area">
+      <div id="name"><a href="#portfolio">Alfie Yang</a></div>
       <nav class="toolbar">
         <a id="hamburger" href="#"
-          ><img src="icons/menu.svg" alt="menu logo"
+          ><img src="icons/menu.svg" alt="menu icon"
         /></a>
         <ul class="top-nav">
-          <li class="nav-items"><a>Portfolio</a></li>
-          <li class="nav-items"><a>About</a></li>
-          <li class="nav-items"><a>Contact</a></li>
+          <li class="nav-items"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-items"><a href="#about-me">About</a></li>
+          <li class="nav-items"><a href="#contact-form">Contact</a></li>
           <li class="nav-items">
-            <a><img src="Desktop_icons/Mail.svg" alt="mail logo" /></a>
+            <a href="#"><img src="Desktop_icons/Mail.svg" alt="mail icon" /></a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main title="Introduction section">
       <section class="headline-section">
-        <h1>Hey There.<br />I’m Alex</h1>
+        <h1>Hey There.<br />I’m Alfie</h1>
         <h4>I’am a Software Developer</h4>
         <p id="description">
           I can help you build a product , feature or website Look through some
@@ -45,33 +45,37 @@
       <ul class="socials">
         <li>
           <a class="social" href=""
-            ><img src="icons/github.svg" alt="Github logo"
+            ><img src="icons/github.svg" alt="Link icon to my Github account"
           /></a>
         </li>
         <li>
           <a class="social" href=""
-            ><img src="icons/linkedin.svg" alt="Linkedin logo"
+            ><img
+              src="icons/linkedin.svg"
+              alt="Link icon to my Linkedin account"
           /></a>
         </li>
         <li>
           <a class="social" href=""
-            ><img src="icons/angelist.svg" alt="Angelist logo"
+            ><img
+              src="icons/angelist.svg"
+              alt="Link icon to my Angelist account"
           /></a>
         </li>
         <li>
           <a class="social" href=""
-            ><img src="icons/twitter.svg" alt="Twitter logo"
+            ><img src="icons/twitter.svg" alt="Link icon to my Twitter account"
           /></a>
         </li>
         <li>
           <a class="social" href=""
-            ><img src="icons/medium.svg" alt="Medium logo"
+            ><img src="icons/medium.svg" alt="Link icon to my Medium account"
           /></a>
         </li>
       </ul>
     </main>
     <!--Work section-->
-    <section class="work-section">
+    <section class="work-section" title="Collection of my projects">
       <div id="heading-bar">
         <h1 id="heading">My Recent Works</h1>
         <div id="bar"></div>
@@ -98,7 +102,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <div id="project-button">See Project</div>
+          <button id="project-button" type="submit">See Project</button>
         </div>
       </div>
       <!--The project cards-->
@@ -120,7 +124,7 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
         <div class="card healthCare">
           <div class="description">
@@ -139,7 +143,7 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
         <div class="card website">
           <div class="description">
@@ -158,7 +162,7 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
         <div class="card more">
           <div class="description">
@@ -177,7 +181,7 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
         <div class="card healthCare">
           <div class="description">
@@ -196,7 +200,7 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
         <div class="card website">
           <div class="description">
@@ -215,12 +219,12 @@
               </ul>
             </div>
           </div>
-          <div class="project-button">See Project</div>
+          <button type="submit" class="project-button">See Project</button>
         </div>
       </section>
     </section>
     <!--About me section-->
-    <section class="about-me">
+    <section class="about-me" title="Get to know me more">
       <div id="about-me">
         <div id="head">
           <h1>About me</h1>
@@ -233,13 +237,13 @@
             hestiate to contact me.
           </p>
         </div>
-        <div id="resume">Get My Resume</div>
+        <button type="submit" id="resume">Get My Resume</button>
       </div>
       <div id="devider"></div>
       <div class="skill">
         <ul>
           <li id="language">
-            <img src="Images/square-2.svg" alt="list logo" /> Language
+            <img src="Images/square-2.svg" alt="list icon" /> Language
             <ul class="nested">
               <li>Javascript</li>
               <li>Ruby</li>
@@ -249,7 +253,7 @@
           </li>
           <br />
           <li id="frameworks">
-            <img src="Images/square.svg" alt="second list logo" /> Frameworks
+            <img src="Images/square.svg" alt="second list icon" /> Frameworks
             <ul class="nested">
               <li>Bootstrap</li>
               <li>Ruby on Rails</li>
@@ -260,7 +264,7 @@
           </li>
           <br />
           <li id="skills">
-            <img src="Images/circle.svg" alt="last list logo" /> Skills
+            <img src="Images/circle.svg" alt="last list icon" /> Skills
             <ul class="nested">
               <li>Codekit</li>
               <li>Github</li>
@@ -273,7 +277,7 @@
       </div>
     </section>
     <!--Contact-form-section-->
-    <section class="contact-form">
+    <section id="contact-form" class="contact-form" title="Contact me">
       <form action="https://formspree.io/f/xayzobow" method="post">
         <div id="ch-container">
           <h1 id="contact-header">
@@ -316,37 +320,45 @@
             required
           ></textarea>
           <div>
-            <button type="submit" value="Get in touch">Get in touch</button>
+            <button id="button" type="submit" value="Get in touch">
+              Get in touch
+            </button>
           </div>
         </div>
       </form>
     </section>
     <hr />
-    <footer>
+    <footer title="footer">
       <ul class="logos">
         <li>
           <a class="logo" href=""
-            ><img src="icons/github1.svg" alt="Github logo"
+            ><img src="icons/github1.svg" alt="Link icon to my Github account"
           /></a>
         </li>
         <li>
           <a class="logo" href=""
-            ><img src="icons/linkedin1.svg" alt="Linkedin logo"
+            ><img
+              src="icons/linkedin1.svg"
+              alt="Link icon to my Linkedin account"
           /></a>
         </li>
         <li>
           <a class="logo" href=""
-            ><img src="icons/angelist1.svg" alt="Angelist logo"
+            ><img
+              src="icons/angelist1.svg"
+              alt="Link icon to my Angelist account"
           /></a>
         </li>
         <li>
           <a class="logo" href=""
-            ><img src="icons/twitter1.svg" alt="Twitter logo"
+            ><img
+              src="icons/twitter1.svg"
+              alt="Link icon to my Twitter account"
           /></a>
         </li>
         <li>
           <a class="logo" href=""
-            ><img src="icons/medium1.svg" alt="Medium logo"
+            ><img src="icons/medium1.svg" alt="Link icon to my Medium account"
           /></a>
         </li>
       </ul>
