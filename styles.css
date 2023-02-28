@@ -939,10 +939,10 @@ footer {
     padding-left: 1.5%;
 
   }
-#fullname:focus,
+
+  #fullname:focus,
   #email:focus{
     color: #ff6b00;
     cursor: pointer;
   }
-  
 }
