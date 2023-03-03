@@ -647,7 +647,7 @@ footer {
     background: url(Desktop_icons/main-background.svg), #1c1a19;
     background-repeat: no-repeat;
     background-position: 100% -9vh;
-    background-size: 40%;
+    background-size: 37%;
     display: grid;
     grid-template-columns: 10% 30% 60%;
     grid-template-rows: 20% 15% 30% 15% 20%;
