@@ -681,6 +681,8 @@ footer {
   #description {
     font-weight: 400;
     font-size: 20px;
+    width: 111%;
+    line-height: 30px;
   }
 
   .socials {
