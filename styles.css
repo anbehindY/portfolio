@@ -324,7 +324,7 @@ main {
   display: grid;
   grid-template-rows: 563px 89px 1241.46px;
   grid-template-columns: 100%;
-  background: rgba(28, 26, 25, 1);
+  background: #262626;
   align-content: center;
   justify-content: center;
 }
