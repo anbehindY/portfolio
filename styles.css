@@ -519,7 +519,6 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  color: #ff6b00;
 }
 
 form div {
@@ -938,11 +937,5 @@ footer {
   #fullname,
   #email {
     padding-left: 1.5%;
-  }
-
-  #fullname:focus,
-  #email:focus {
-    color: #ff6b00;
-    cursor: pointer;
   }
 }
