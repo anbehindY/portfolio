@@ -35,6 +35,12 @@ header {
   text-decoration: none;
 }
 
+.toolbar {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
 .hamburger {
   display: block;
   width: 20px;
@@ -73,7 +79,30 @@ button {
 }
 
 .top-nav {
+  display: block;
+  list-style: none;
+  background: #262626;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  min-height: 100vh; 
+  padding-top: 100px;
+  padding-left: 10%;
+  transition: 0.4s;
+}
+
+.top-nav a {
+  text-decoration: none;
+}
+
+.top-nav li:last-child {
   display: none;
+}
+
+.top-nav.active {
+  left: 0;
 }
 
 main {
