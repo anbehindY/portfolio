@@ -35,11 +35,28 @@ header {
   text-decoration: none;
 }
 
-#hamburger {
-  display: flex;
-  align-items: center;
+.hamburger {
+  display: block;
+  width: 20px;
+  cursor: pointer;
+  z-index: 1;
 }
 
+.hamburger::before,
+.hamburger .bar,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+button {
+  background: none;
+}
 .top-nav {
   display: none;
 }
