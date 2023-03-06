@@ -97,6 +97,16 @@ button {
   text-decoration: none;
 }
 
+.top-nav a {
+  color: #FFF5E1;
+  font-family: 'Inter', sans-serif;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+
 .top-nav li:last-child {
   display: none;
 }
