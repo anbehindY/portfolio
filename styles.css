@@ -57,6 +57,21 @@ header {
 button {
   background: none;
 }
+
+.hamburger.active::before {
+  transform: rotate(-45deg) translate(-2px,4px);
+  background: #979493;
+}
+
+.hamburger.active .bar {
+  opacity: 0;
+}
+
+.hamburger.active::after {
+  transform: rotate(45deg) translate(-4px,-6px);
+  background: #979493;
+}
+
 .top-nav {
   display: none;
 }
