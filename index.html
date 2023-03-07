@@ -14,14 +14,11 @@
     />
   </head>
 
-  <body id="portfolio">
+  <body>
     <!--The  first page-->
     <header title="navigation area">
       <div id="name"><a href="#portfolio">Alfie Yang</a></div>
       <nav class="toolbar">
-        <a id="hamburger" href="#"
-          ><img src="icons/menu.svg" alt="menu icon"
-        /></a>
         <ul class="top-nav">
           <li class="nav-items"><a href="#portfolio">Portfolio</a></li>
           <li class="nav-items"><a href="#about-me">About</a></li>
@@ -30,6 +27,9 @@
             <a href="#"><img src="Desktop_icons/Mail.svg" alt="mail icon" /></a>
           </li>
         </ul>
+        <button type="submit" class="hamburger">
+          <div class="bar"></div>
+        </button>
       </nav>
     </header>
     <main title="Introduction section">
@@ -75,7 +75,7 @@
       </ul>
     </main>
     <!--Work section-->
-    <section class="work-section" title="Collection of my projects">
+    <section id="portfolio" class="work-section" title="Collection of my projects">
       <div id="heading-bar">
         <h1 id="heading">My Recent Works</h1>
         <div id="bar"></div>
@@ -364,5 +364,6 @@
       </ul>
       <div id="black-bar"></div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
