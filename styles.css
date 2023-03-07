@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 14%;
+  height: 4vh;
   background: #3c3a39;
   padding: 0 24px;
   align-items: center;
@@ -30,18 +30,85 @@ header {
   transform: rotate(3deg);
 }
 
+.top-nav a {
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  text-decoration: none;
+}
+
 #name a {
   color: inherit;
   text-decoration: none;
 }
 
-#hamburger {
+.toolbar {
   display: flex;
+  gap: 100px;
   align-items: center;
 }
 
+.hamburger {
+  display: block;
+  width: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger::before,
+.hamburger .bar,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.hamburger.active::before {
+  transform: rotate(-45deg) translate(-2px, 4px);
+  background: #979493;
+}
+
+.hamburger.active .bar {
+  opacity: 0;
+}
+
+.hamburger.active::after {
+  transform: rotate(45deg) translate(-4px, -6px);
+  background: #979493;
+}
+
 .top-nav {
+  display: block;
+  list-style: none;
+  background: #262626;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  min-height: 100vh;
+  padding: 50px 10% 0 5%;
+  transition: 0.4s;
+}
+
+.top-nav .nav-items:last-child {
   display: none;
+}
+
+.top-nav.active {
+  left: 0;
 }
 
 main {
@@ -526,10 +593,6 @@ form div {
   justify-content: center;
 }
 
-button {
-  border: none;
-}
-
 #button {
   display: flex;
   justify-content: center;
@@ -611,35 +674,42 @@ footer {
     padding: 0 8%;
   }
 
-  #hamburger {
+  .hamburger {
     display: none;
   }
 
   .top-nav {
     display: flex;
-    align-items: center;
-    list-style: none;
     justify-content: flex-end;
-    gap: 1.5em;
+    gap: 40px;
+    list-style: none;
+    left: -80px;
+    top: -40px;
+    position: fixed;
+    background: none;
+    padding-right: 50px;
+  }
+
+  .top-nav li:last-child {
+    display: block;
   }
 
   .nav-items {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+    border: none;
   }
 
   .nav-items a {
     color: inherit;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .nav-items:last-child a img {
-    padding-top: 5px;
+    padding-top: 8px;
   }
 
   main {
