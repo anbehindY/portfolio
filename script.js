@@ -1,10 +1,16 @@
 const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.top-nav');
+const navItems = document.querySelectorAll('.nav-items');
+
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
 });
-const mobileNav = document.querySelector('.top-nav');
+
 hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
 });
-const navItems = document.querySelector('.nav-items');
-navItems.onclick = navItems.forEach((navItem) => navItem.classList.remove('active'));
+
+navItems.forEach((navItem) => navItem.addEventListener('click', () => {
+  document.querySelector('.hamburger').classList.remove('active');
+  mobileNav.classList.remove('active');
+}));
