@@ -89,6 +89,13 @@ button {
   background: #979493;
 }
 
+.nav-items {
+  border-bottom: 1px solid #6f6c6b;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+}
+
 .top-nav {
   display: block;
   list-style: none;
@@ -109,13 +116,6 @@ button {
 
 .top-nav.active {
   left: 0;
-}
-
-.nav-items {
-  border-bottom: 1px solid #6F6C6B;
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-  padding-left: 5%;
 }
 
 main {
