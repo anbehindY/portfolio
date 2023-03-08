@@ -13,10 +13,11 @@ header {
   padding: 0 24px;
   align-items: center;
   justify-self: flex-start;
+  position: fixed;
+  z-index: 5;
 }
 
 #name {
-  display: inline;
   width: 77px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -105,13 +106,13 @@ button {
   top: 0;
   left: 100%;
   z-index: 0;
-  min-height: 100vh;
+  height: 100vh;
   padding: 50px 10% 0 5%;
   transition: 0.4s;
 }
 
 .top-nav .nav-items:last-child {
-  display: none;
+  opacity: 0;
 }
 
 .top-nav.active {
@@ -119,7 +120,7 @@ button {
 }
 
 main {
-  height: 96vh;
+  height: 80vh;
   background: url("Images/matrix.svg"), #1c1a19;
   background-repeat: no-repeat;
   background-position: 100% 110%;
@@ -303,11 +304,11 @@ main {
 .modal {
   width: 90%;
   height: 85vh;
-  padding: 3%;
+  padding: 4%;
   background: #fff;
   transform: scale(0);
   transition: 200ns ease-in-out;
-  z-index: 1;
+  z-index: 10;
 }
 
 .modal.active {
@@ -316,7 +317,7 @@ main {
 .modal-header {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 40px;
   width: auto;
   height: auto;
   padding-top: 5%;
@@ -361,12 +362,13 @@ main {
 }
 
 #img10 {
-  margin-top: 24px;
+  margin-top: 44px;
   width: 100%;
   height: 240px;
   background: url(Images/img10.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .description.popup {
@@ -407,8 +409,9 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 9;
 }
 
 .overlay {
@@ -428,6 +431,7 @@ main {
   height: 386px;
   background: url(Images/papd.svg);
   margin: 24px 0;
+  z-index: 1;
 }
 
 .description {
@@ -785,7 +789,6 @@ footer {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0;
     text-align: center;
     width: auto;
     height: 20px;
@@ -801,20 +804,22 @@ footer {
     display: none;
   }
 
-  .top-nav {
+  ul.top-nav {
     display: flex;
+    height: 100px;
+    width: 400px;
     justify-content: flex-end;
-    gap: 40px;
+    gap: 20px;
     list-style: none;
-    left: -80px;
+    left: 67%;
     top: -40px;
     position: fixed;
     background: none;
     padding-right: 50px;
   }
 
-  .top-nav li:last-child {
-    display: block;
+  .top-nav .nav-items:last-child {
+    opacity: 1;
   }
 
   .nav-items {
@@ -822,6 +827,7 @@ footer {
     text-align: center;
     color: rgba(255, 255, 255, 1);
     border: none;
+    height: 20px;
   }
 
   .nav-items a {
@@ -838,12 +844,14 @@ footer {
   main {
     background: url(Desktop_icons/main-background.svg), #1c1a19;
     background-repeat: no-repeat;
-    background-position: 100% -9vh;
+    background-position: 100% -50%;
+    height: 100vh;
     background-size: 37%;
     display: grid;
     grid-template-columns: 10% 30% 60%;
     grid-template-rows: 20% 15% 30% 15% 20%;
     align-items: center;
+    padding-top: 4vh;
   }
 
   .headline-section {
@@ -930,6 +938,7 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 25% 0;
+    z-index: 1;
   }
 
   #card {
@@ -1024,6 +1033,76 @@ footer {
     display: flex;
     width: auto;
     align-items: center;
+  }
+
+  .modal {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+  }
+
+  .modal-header {
+    padding: 0;
+    width: 90%;
+    height: auto;
+    gap: 60%;
+   
+  }
+
+  .modal-heading {
+    width: 90%;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .close-btn {
+    width:5%;
+  }
+
+  .tech-box.popup ul {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-box.popup ul li {
+    padding: 0.7%;
+
+  }
+  .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    height: 100%;
+  }
+
+  #img10 {
+    background: url(Desktop_icons/IMG10.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: center; */
+    margin: 0;
+    width: 60%;
+    height: 100%;
+  }
+
+  .right-section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 55.5%;
+  }
+
+  p.description.popup {
+    margin: 0;
+    width: 100%;
+  }
+
+  .button-container {
+    gap: 12px;
+    width: 80%;
   }
 
   .about-me {
