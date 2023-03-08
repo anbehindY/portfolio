@@ -133,7 +133,8 @@ const cards = () => {
   return card;
 };
 
-const firstCard = ` <div id="card">
+const firstCard = ` <div id="yoga-img"></div>
+                    <div id="card">
                       <div id="main-text">
                         <h3>${cardsInfo[0].title2}</h3>
                       </div>
@@ -154,6 +155,6 @@ const firstCard = ` <div id="card">
                     </div>`;
 
 window.addEventListener('load', () => {
-  document.getElementById('card').innerHTML = firstCard;
+  document.getElementById('first-project').innerHTML = firstCard;
   document.querySelector('.card-container').innerHTML = cards().join('');
 });
