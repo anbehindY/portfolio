@@ -307,8 +307,11 @@ main {
   padding: 4%;
   background: #fff;
   transform: scale(0);
-  transition: 200ns ease-in-out;
+  transition: 200ms ease-in-out;
   z-index: 10;
+  position: relative;
+  top: 60%;
+  left: 5%;
 }
 
 .modal.active {
@@ -341,20 +344,22 @@ main {
   height: 20px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 .rotator1 {
   width: 100%;
   height: 2px;
   background-color: #67798e;
-  transform: rotate(45deg) translate(11.5px,-1px);
+  transform: rotate(-45deg) translate(-6px,6px);
 }
 
 .rotator2 {
   width: 100%;
   height: 2px;
   background-color: #67798e;
-  transform: rotate(-45deg) translate(2.5px,10px);
+  transform: rotate(45deg) translate(-6px,-7px);
 }
 
 .tech-box.popup {
@@ -1040,6 +1045,8 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 3%;
+    left: 0;
+    top: 100%;
   }
 
   .modal-header {
