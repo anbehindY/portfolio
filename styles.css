@@ -338,6 +338,10 @@ main {
   color: #172b4d;
 }
 
+.modal-heading.font-size {
+  font-size: 1.3em;
+}
+
 .close-btn {
   width: 20px;
   height: 20px;

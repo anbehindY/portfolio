@@ -152,12 +152,12 @@ const firstCard = ` <div id="yoga-img"></div>
                           <li>${cardsInfo[0].tech_stack.tech3}</li>
                         </ul>
                       </div>
-                      <button onclick='openModal()' id="project-button" type="submit" href='#modal'>See Project</button>
+                      <button onclick='openfirst()' id="project-button" type="submit" href='#modal'>See Project</button>
                     </div>`;
 
-const modalMobile = `<div id="modal "class="modal">
+const modalMobile = ` <div id="modal "class="modal">
                         <header class='modal-header'>
-                          <h1 class="modal-heading">Multi-Post Stories</h1>
+                          <h1 class="modal-heading font-size">${cardsInfo[1].title}</h1>
                           <div class="close-btn" onclick="closeModal()">
                             <div class="rotator1"></div>
                             <div class="rotator2"></div>
@@ -165,15 +165,15 @@ const modalMobile = `<div id="modal "class="modal">
                         </header>
                         <div class="tech-box popup">
                           <ul>
-                            <li>html</li>
-                            <li>Bootstrap</li>
-                            <li>Ruby on rails</li>
+                            <li>${cardsInfo[1].tech_stack.tech1}</li>
+                            <li>${cardsInfo[1].tech_stack.tech2}</li>
+                            <li>${cardsInfo[1].tech_stack.tech3}</li>
                           </ul>
                         </div>
                         <div class="content">
                           <div id="img10"></div>
                           <div class="right-section">
-                            <p class="description popup">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+                            <p class="description popup">${cardsInfo[0].details}</p>
                             <div class="button-container">
                               <button type="submit" id="seeLive" class="project-button popup">See Live<img src="icons/seeLive.svg" /></button>
                               <button type="submit" id="seeSource" class="project-button popup">See Source<img src="icons/seeSource.svg" /></button>
@@ -183,6 +183,35 @@ const modalMobile = `<div id="modal "class="modal">
                       </div>
                       <div class="overlay"></div>`;
 
+const modalfirst = `<div id="modal "class="modal">
+                      <header class='modal-header'>
+                        <h1 class="modal-heading">${cardsInfo[0].title2}</h1>
+                        <div class="close-btn" onclick="closeModal()">
+                          <div class="rotator1"></div>
+                          <div class="rotator2"></div>
+                        </div>
+                      </header>
+                      <div class="tech-box popup">
+                        <ul>
+                          <li>${cardsInfo[0].tech_stack.tech0}</li>
+                          <li>${cardsInfo[0].tech_stack.tech1}</li>
+                          <li>${cardsInfo[0].tech_stack.tech2}</li>
+                          <li>${cardsInfo[0].tech_stack.tech3}</li>
+                        </ul>
+                      </div>
+                      <div class="content">
+                        <div id="img10"></div>
+                        <div class="right-section">
+                          <p class="description popup">${cardsInfo[0].details}</>
+                          <div class="button-container">
+                            <button type="submit" id="seeLive" class="project-button popup">See Live<img src="icons/seeLive.svg" /></button>
+                            <button type="submit" id="seeSource" class="project-button popup">See Source<img src="icons/seeSource.svg" /></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>`;
+
 window.addEventListener('load', () => {
   document.getElementById('first-project').innerHTML = firstCard;
   document.querySelector('.card-container').innerHTML = cards().join('');
@@ -190,6 +219,14 @@ window.addEventListener('load', () => {
 
 const openModal = () => {
   document.getElementById('modal-container').innerHTML = modalMobile;
+  const modal = document.querySelector('.modal');
+  const overlay = document.querySelector('.overlay');
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
+
+const openfirst = () => {
+  document.getElementById('modal-container').innerHTML = modalfirst;
   const modal = document.querySelector('.modal');
   const overlay = document.querySelector('.overlay');
   modal.classList.add('active');
