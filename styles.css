@@ -322,7 +322,6 @@ main {
 .modal-header {
   display: flex;
   justify-content: flex-start;
-  gap: 40px;
   width: auto;
   height: auto;
   padding-left: 0;
@@ -350,6 +349,9 @@ main {
   flex-direction: column;
   cursor: pointer;
   justify-content: space-between;
+  position: fixed;
+  top: 2.5%;
+  left: 90%;
 }
 
 .rotator1 {
@@ -379,6 +381,13 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
 }
 
 p.description.popup {
@@ -441,12 +450,16 @@ p.description.popup {
   background: url(Images/papd.svg);
   margin: 24px 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  margin: 76px 0 62px 0;
+  margin-top: 25%;
+  width: 100%;
 }
 
 .heading {
@@ -1010,6 +1023,11 @@ footer {
 
   .card .description {
     margin-bottom: 15px;
+    margin-top: 44%;
+  }
+
+  .card.website .description {
+    margin-top: 55%;
   }
 
   .card > .project-button {
@@ -1073,7 +1091,9 @@ footer {
   }
 
   .close-btn {
-    width: 5%;
+    width: 2%;
+    top: 6%;
+    left: 92%;
   }
 
   div.skill ul {
@@ -1119,12 +1139,14 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 52.5%;
   }
 
   p.description.popup {
     margin: 0;
     width: 100%;
+    height: 100%;
   }
 
   .button-container {
