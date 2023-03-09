@@ -303,14 +303,14 @@ main {
 
 .modal {
   width: 90%;
-  height: 85vh;
+  height: 75vh;
   padding: 4%;
   background: #fff;
   transform: scale(0);
   transition: 200ms ease-in-out;
   z-index: 10;
-  position: relative;
-  top: 60%;
+  position: fixed;
+  top: 0;
   left: 5%;
 }
 
@@ -324,8 +324,6 @@ main {
   gap: 40px;
   width: auto;
   height: auto;
-  padding-top: 5%;
-  padding-bottom: 55px;
   padding-left: 0;
   align-items: flex-start;
   background-color: inherit;
@@ -365,10 +363,11 @@ main {
 
 .tech-box.popup {
   color: #3c3a39;
+  margin-bottom: 5%;
+  margin-top: 15%;
 }
 
 #img10 {
-  margin-top: 44px;
   width: 100%;
   height: 240px;
   background: url(Images/img10.png);
@@ -377,19 +376,18 @@ main {
   background-position: center;
 }
 
-.description.popup {
+p.description.popup {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .button-container {
   display: flex;
-  margin-top: 16px;
   gap: 20px;
 }
 
@@ -1042,12 +1040,15 @@ footer {
   }
 
   .modal {
-    width: 99%;
+    width: 82%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     padding-top: 3%;
-    left: 0;
-    top: 0;
+    padding-bottom: 3%;
+    left: 9%;
+    top: 10%;
+    gap: 0;
   }
 
   .modal-header {
@@ -1075,6 +1076,11 @@ footer {
     list-style: none;
   }
 
+  .tech-box.popup {
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
   .tech-box.popup ul {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -1089,14 +1095,13 @@ footer {
     align-items: flex-start;
     gap: 25px;
     height: 100%;
+    margin-top: 0;
   }
 
   #img10 {
     background: url(Desktop_icons/IMG10.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
-    /* background-position: center; */
     margin: 0;
     width: 60%;
     height: 100%;
@@ -1107,7 +1112,7 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 55.5%;
+    gap: 52.5%;
   }
 
   p.description.popup {
