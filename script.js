@@ -256,3 +256,14 @@ function closeModal() {
   overlay.classList.remove('active');
   document.getElementById('modal-container').removeChild(document.querySelector('.modal'));
 }
+
+const validatorLog = document.getElementById('validator-log');
+const form = document.getElementById('form');
+const emailBox = document.getElementById('email');
+
+form.addEventListener('submit', (event) => {
+  if (emailBox.value.toLowerCase() !== emailBox.value) {
+    event.preventDefault();
+    validatorLog.innerText = '*no capital letters can be used for email address';
+  }
+});
