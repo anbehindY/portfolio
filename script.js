@@ -260,9 +260,10 @@ function closeModal() {
 const validatorLog = document.getElementById('validator-log');
 const form = document.getElementById('form');
 const emailBox = document.getElementById('email');
+const regexp = /[A-Z]/;
 
 form.addEventListener('submit', (event) => {
-  if (emailBox.value.toLowerCase() !== emailBox.value) {
+  if (regexp.test(emailBox.value)) {
     event.preventDefault();
     validatorLog.innerText = '*no capital letters can be used for email address';
   }
