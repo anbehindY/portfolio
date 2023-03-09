@@ -526,7 +526,7 @@ p.description.popup {
   display: grid;
   grid-template-rows: 563px 89px 1241.46px;
   grid-template-columns: 100%;
-  background: #262626;
+  background-color: #1c1a19;
   align-content: center;
   justify-content: center;
 }
@@ -583,7 +583,7 @@ p.description.popup {
   width: auto;
   height: 48px;
   color: rgba(255, 255, 255, 1);
-  background: #1c1a19;
+  background-color: #ff6b00;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
