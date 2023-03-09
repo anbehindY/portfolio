@@ -14,7 +14,7 @@
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-- [👥 Author](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -99,13 +99,26 @@ To run tests:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Yan Min Thwin**
 
 - GitHub: [@anbehindY](https://github.com/anbehindY)
 - Twitter: [@yanminthwin](https://twitter.com/yanminthwin)
 - LinkedIn: [Yan Min Thwin](https://www.linkedin.com/in/yan-min-thwin-192862215)
+
+👤 **JansueT**
+
+- GitHub: [@githubhandle](https://github.com/JansueT)
+- instagram: [@cansuetas](https://instagram.com/cansuetas)
+- twitter: [@cansu8tas](https://twitter.com/cansu8tas)
+- linkedIn: [@LinkedIn](https://www.linkedin.com/in/cansu-tas-467844251/)
+
+👤 **Aimable BANCUNGUYE**
+
+- GitHub: [@bancunguye66](https://github.com/bancunguye66)
+- Twitter: [@bancunguye66](https://twitter.com/bancunguye66)
+- LinkedIn: [Aimable BANCUNGUYE](https://linkedin.com/in/Aimable BANCUNGUYE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
