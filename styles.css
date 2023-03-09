@@ -272,7 +272,7 @@ main {
 }
 
 #project-button {
-  background-color: #1c1a19;
+  background-color: #ff6b00;
   padding: 12px;
   width: 124px;
   height: 48px;
@@ -287,12 +287,13 @@ main {
 }
 
 #project-button:hover {
-  color: rgba(245, 88, 0, 1);
+  background-color: #fff5e1;
+  color: #f55800;
   cursor: pointer;
 }
 
 #project-button:active {
-  background: rgba(224, 83, 4, 1);
+  background: #e05304;
   color: rgba(244, 241, 240, 1);
 }
 
@@ -498,7 +499,7 @@ p.description.popup {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
-  background: #1c1a19;
+  background: #ff6b00;
   color: #fff;
   width: 327px;
   height: 48px;
@@ -508,12 +509,13 @@ p.description.popup {
 }
 
 .project-button:hover {
-  color: rgba(245, 88, 0, 1);
+  background-color: #fff5e1;
+  color: #f55800;
   cursor: pointer;
 }
 
 .project-button:active {
-  background: rgba(224, 83, 4, 1);
+  background: #e05304;
   color: rgba(244, 241, 240, 1);
 }
 
@@ -596,7 +598,7 @@ p.description.popup {
 }
 
 #resume:hover {
-  background-color: #1c1a19;
+  background-color: #fff5e1;
   color: rgba(245, 88, 0, 1);
   cursor: pointer;
 }
@@ -733,7 +735,7 @@ form div {
   justify-content: center;
   padding: 12px;
   height: 48px;
-  background: #1c1a19;
+  background: #ff6b00;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -745,6 +747,7 @@ form div {
 }
 
 #button:hover {
+  background-color: #fff5e1;
   color: rgba(245, 88, 0, 1);
   cursor: pointer;
 }
