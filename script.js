@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.top-nav');
-const navItems = document.querySelectorAll('.nav-items');
+const navItems = document.querySelector('.nav-items');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -250,7 +250,7 @@ const openfirst = () => {
 };
 
 function closeModal() {
-  const modal = document.querySelector('.modal');
+  const modal = document.querySelector('modal');
   const overlay = document.querySelector('.overlay');
   modal.classList.remove('active');
   overlay.classList.remove('active');
