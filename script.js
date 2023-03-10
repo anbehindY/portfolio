@@ -279,3 +279,13 @@ form.addEventListener('input', () => {
   };
   localStorage.setItem('contactForm', JSON.stringify(formData));
 });
+
+function showData() {
+  const formObj = JSON.parse(localStorage.getItem('contactForm'));
+  if (formObj) {
+    nameBox.value = formObj.name;
+    emailBox.value = formObj.email;
+    messageBox.value = formObj.message;
+  }
+}
+showData();
