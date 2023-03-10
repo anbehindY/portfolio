@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.top-nav');
-const navItems = document.querySelector('.nav-items');
+const navItems = document.querySelectorAll('.nav-items');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
 });
 
 hamburger.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
+  mobileNav.classList.toggle('active')
 });
 
 navItems.forEach((navItem) => navItem.addEventListener('click', () => {
@@ -238,7 +238,7 @@ const modalfirst = `<div id="modal "class="modal">
 
 window.addEventListener('load', () => {
   document.getElementById('first-project').innerHTML = firstCard;
-  document.querySelector('.card-container').innerHTML = cards().join('');
+  document.querySelector('card-container').innerHTML = cards().join('');
 });
 
 const openfirst = () => {
@@ -250,7 +250,7 @@ const openfirst = () => {
 };
 
 function closeModal() {
-  const modal = document.querySelector('modal');
+  const modal = document.querySelector('.modal');
   const overlay = document.querySelector('.overlay');
   modal.classList.remove('active');
   overlay.classList.remove('active');
