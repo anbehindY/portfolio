@@ -715,6 +715,10 @@ fieldset {
   width: 90%;
 }
 
+#validator-log {
+  color: #ff6b00;
+}
+
 textarea {
   height: 114px;
   width: 100%;
