@@ -260,6 +260,8 @@ function closeModal() {
 const validatorLog = document.getElementById('validator-log');
 const form = document.getElementById('form');
 const emailBox = document.getElementById('email');
+const nameBox = document.getElementById('fullname');
+const messageBox = document.getElementById('message');
 const regexp = /[A-Z]/;
 
 form.addEventListener('submit', (event) => {
@@ -267,4 +269,13 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     validatorLog.innerText = '*no capital letters can be used for email address';
   }
+});
+
+form.addEventListener('input', () => {
+  const formData = {
+    name: nameBox.value,
+    email: emailBox.value,
+    message: messageBox.value,
+  };
+  localStorage.setItem('contactForm', JSON.stringify(formData));
 });
