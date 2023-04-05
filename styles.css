@@ -426,8 +426,6 @@ p.description.popup {
 .seeSource {
   text-decoration: none;
   color: white;
-  width: inherit;
-  height: inherit;
   display: inline-flex;
   width: 100%;
   align-items: center;
