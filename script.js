@@ -138,12 +138,12 @@ const firstCardInfo = {
   id: 1,
   class: 'more',
   image: '#',
-  title2: 'Multi-Post Stories',
+  title2: 'Books Collection',
   details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   tech_stack: {
     tech0: 'css',
     tech1: 'html',
-    tech2: 'bootstrap',
+    tech2: 'JavaScript',
     tech3: 'Ruby',
   },
 };
@@ -228,8 +228,8 @@ const modalfirst = `<div id="modal "class="modal">
                         <div class="right-section">
                           <p class="description popup">${firstCardInfo.details}</>
                           <div class="button-container">
-                            <button type="submit" id="seeLive" class="project-button popup">See Live<img src="icons/seeLive.svg" /></button>
-                            <button type="submit" id="seeSource" class="project-button popup">See Source<img src="icons/seeSource.svg" /></button>
+                            <button type="submit" id="seeLive" class="project-button popup"><a class="seeLive" href="https://anbehindy.github.io/Books-Collection/#" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
+                            <button type="submit" id="seeSource" class="project-button popup"><a class="seeSource" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                           </div>
                         </div>
                       </div>
