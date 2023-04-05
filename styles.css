@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 4vh;
+  height: 50px;
   background: #3c3a39;
   padding: 0 24px;
   align-items: center;
@@ -18,7 +18,7 @@ header {
 }
 
 #name {
-  width: 77px;
+  width: 100px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -120,7 +120,7 @@ button {
 }
 
 main {
-  height: 80vh;
+  height: 800px;
   background: url("Images/matrix.svg"), #1c1a19;
   background-repeat: no-repeat;
   background-position: 100% 110%;
@@ -218,13 +218,14 @@ main {
 #yoga-img {
   width: 100%;
   height: 55vh;
-  background: url(Images/yoga.png);
+  background: url(Images/desktop_books.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #yoga-img:hover {
   transform: scale(1.01);
+  box-shadow: 2px 2px #3c3a39;
 }
 
 #card {
@@ -377,9 +378,9 @@ main {
 #img10 {
   width: 100%;
   height: 240px;
-  background: url(Images/img10.png);
+  background: url(Images/desktop_books.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -419,6 +420,22 @@ p.description.popup {
   justify-content: center;
   gap: 20px;
   width: 50%;
+}
+
+.seeLive,
+.seeSource {
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  gap: 5%;
+}
+
+.seeLive > img,
+.seeSource > img {
+  width: 25%;
+  height: 90%;
 }
 
 .overlay.active {
@@ -962,11 +979,12 @@ footer {
 
   #yoga-img {
     width: 100%;
-    background: url(Desktop_icons/YOGA.svg);
+    background: url(Images/desktop_books.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 25% 0;
     z-index: 1;
+    border: 1px solid black;
   }
 
   #card {
@@ -1130,9 +1148,10 @@ footer {
   }
 
   #img10 {
-    background: url(Desktop_icons/IMG10.png);
+    background: url(Images/desktop_books.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border: 1px solid black;
     margin: 0;
     width: 60%;
     height: 100%;
