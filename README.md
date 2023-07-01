@@ -105,7 +105,7 @@ To run tests:
 
 - GitHub: [@anbehindY](https://github.com/anbehindY)
 - Twitter: [@yanminthwin](https://twitter.com/yanminthwin)
-- LinkedIn: [Yan Min Thwin](https://www.linkedin.com/in/yan-min-thwin-192862215)
+- LinkedIn: [Yan Min Thwin](https://www.linkedin.com/in/yan-min-thwin/)
 
 👤 **JansueT**
 
