@@ -61,6 +61,8 @@ document.getElementById('first-project').innerHTML = ` <div id="img" style="back
                       </div>
                       <button id="project-button" type="submit" href='#modal'>See Project</button>
                     </div>`;
+
+ // Styling the first card
 const img = document.getElementById('img');
 img.style.width = '100%';
 img.style.background = `url(Images/${firstCardInfo.image})`;
@@ -100,7 +102,7 @@ const modalfirst = `<div id="modal "class="modal">
                     </div>
                     <div class="overlay"></div>`;
 
-// Displays the modal for the first card
+// Action for displaying the modal for the first card
 const firstModal = () => {
   document.getElementById('modal-container').innerHTML = modalfirst;
   const modal = document.querySelector('.modal');
@@ -111,6 +113,7 @@ const firstModal = () => {
   closeBtn.onclick = closeModal;
 };
 
+// Displays the modal for the first card when the user clicks on the first card button
 const firstButton = document.getElementById('project-button');
 firstButton.onclick = firstModal;
 
@@ -226,19 +229,18 @@ const card = cardsInfo.map((cardInfo) => `<div class="card ${cardInfo.class}">
                           </ul>
                         </div>
                       </div>
-                    <button onclick='popupInfo(${cardInfo.id})' type="submit" class="project-button">See Project</button>
+                    <button id=${cardInfo.id} type="submit" class="project-button popup">See Project</button>
                   </div> `);
 
 // Displays a collection of cards with details
 document.querySelector('.card-container').innerHTML = card.join('');
 
 // Popup modal for each card
-// eslint-disable-next-line no-unused-vars
 const popupInfo = (projectId) => {
   if (projectId == null) return;
-  let checked = cardsInfo.filter((elem) => elem.id === projectId);
+  let checked = cardsInfo.filter((cardInfo) => cardInfo.id === parseInt(projectId, 10));
   checked = checked.shift();
-  const modalMobile = ` <div id="modal "class="modal">
+  const modalBox = ` <div id="modal "class="modal">
                         <header class='modal-header'>
                           <h1 class="modal-heading font-size">${checked.title}</h1>
                           <div class="close-btn">
@@ -265,7 +267,7 @@ const popupInfo = (projectId) => {
                         </div>
                       </div>
                       <div class="overlay"></div>`;
-  document.getElementById('modal-container').innerHTML = modalMobile;
+  document.getElementById('modal-container').innerHTML = modalBox;
   const modal = document.querySelector('.modal');
   const overlay = document.querySelector('.overlay');
   modal.classList.add('active');
@@ -273,6 +275,13 @@ const popupInfo = (projectId) => {
   const closeBtns = document.querySelectorAll('.close-btn');
   closeBtns.forEach((btn) => btn.addEventListener('click', closeModal));
 };
+
+// Displays the modal for each card when the user clicks on the card button
+const popupBtn = document.querySelectorAll('.project-button.popup');
+popupBtn.forEach((btn) => btn.addEventListener('click', (event) => {
+  const projectId = event.target.id;
+  popupInfo(projectId);
+}));
 
 // Form validation
 const validatorLog = document.getElementById('validator-log');
