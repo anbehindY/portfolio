@@ -215,15 +215,14 @@ main {
   align-items: center;
 }
 
-#yoga-img {
+#img {
   width: 100%;
   height: 55vh;
-  background: url(Images/desktop_books.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-#yoga-img:hover {
+#img:hover {
   transform: scale(1.01);
   box-shadow: 2px 2px #3c3a39;
 }
@@ -975,16 +974,6 @@ footer {
     gap: 2%;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-
-  #yoga-img {
-    width: 100%;
-    background: url(Images/desktop_books.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 25% 0;
-    z-index: 1;
-    border: 1px solid black;
   }
 
   #card {

@@ -16,8 +16,7 @@
       "eol-last": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
-      }],
-      "no-unused-vars": "off"
+      }]
     },
     "ignorePatterns": [
       "dist/",
