@@ -60,7 +60,7 @@ document.getElementById('first-project').innerHTML = ` <div id="img" style="back
                       <button id="project-button" type="submit" href='#modal'>See Project</button>
                     </div>`;
 
- // Styling the first card
+// Styling the first card
 const img = document.getElementById('img');
 img.style.width = '100%';
 img.style.background = `url(Images/${firstCardInfo.image})`;
