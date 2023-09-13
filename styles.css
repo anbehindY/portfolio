@@ -151,7 +151,7 @@ main {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   height: 27px;
   min-width: 327px;
@@ -218,8 +218,6 @@ main {
 #img {
   width: 100%;
   height: 55vh;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 #img:hover {
@@ -502,6 +500,7 @@ p.description.popup {
 .tech-stack {
   justify-content: space-between;
   margin: 12px 75px 0 16px;
+  width: 100%;
 }
 
 .tech-stack ul {

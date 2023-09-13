@@ -33,10 +33,9 @@ const firstCardInfo = {
   title2: 'Books Collection',
   details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   tech_stack: {
-    tech0: 'a',
-    tech1: 'b',
-    tech2: 'c',
-    tech3: 'd',
+    tech0: 'HTML',
+    tech1: 'CSS',
+    tech2: 'JavaScript',
   },
 };
 
@@ -56,7 +55,6 @@ document.getElementById('first-project').innerHTML = ` <div id="img" style="back
                           <li>${firstCardInfo.tech_stack.tech0}</li>
                           <li>${firstCardInfo.tech_stack.tech1}</li>
                           <li>${firstCardInfo.tech_stack.tech2}</li>
-                          <li>${firstCardInfo.tech_stack.tech3}</li>
                         </ul>
                       </div>
                       <button id="project-button" type="submit" href='#modal'>See Project</button>
@@ -67,7 +65,7 @@ const img = document.getElementById('img');
 img.style.width = '100%';
 img.style.background = `url(Images/${firstCardInfo.image})`;
 img.style.backgroundRepeat = 'no-repeat';
-img.style.backgroundSize = 'contain';
+img.style.backgroundSize = 'cover';
 img.style.backgroundPosition = '25% 0';
 img.style.zIndex = '1';
 img.style.border = '1px solid black';
@@ -86,7 +84,6 @@ const modalfirst = `<div id="modal "class="modal">
                           <li>${firstCardInfo.tech_stack.tech0}</li>
                           <li>${firstCardInfo.tech_stack.tech1}</li>
                           <li>${firstCardInfo.tech_stack.tech2}</li>
-                          <li>${firstCardInfo.tech_stack.tech3}</li>
                         </ul>
                       </div>
                       <div class="content">
@@ -123,7 +120,7 @@ const cardsInfo = [
     id: 1,
     class: 'more',
     image: '#',
-    title: 'Profesional Art Printing Data',
+    title: 'Profesional Art',
     title2: 'Multi-Post Stories',
     details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -132,9 +129,9 @@ const cardsInfo = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     tech_stack: {
-      tech0: 'css',
-      tech1: 'html',
-      tech2: 'bootstrap',
+      tech0: 'CSS',
+      tech1: 'HTML',
+      tech2: 'JavaScript',
       tech3: 'Ruby',
     },
     liveLink: '#',
