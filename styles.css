@@ -151,7 +151,7 @@ main {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   height: 27px;
   min-width: 327px;
@@ -215,15 +215,12 @@ main {
   align-items: center;
 }
 
-#yoga-img {
+#img {
   width: 100%;
   height: 55vh;
-  background: url(Images/desktop_books.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-#yoga-img:hover {
+#img:hover {
   transform: scale(1.01);
   box-shadow: 2px 2px #3c3a39;
 }
@@ -503,6 +500,7 @@ p.description.popup {
 .tech-stack {
   justify-content: space-between;
   margin: 12px 75px 0 16px;
+  width: 100%;
 }
 
 .tech-stack ul {
@@ -975,16 +973,6 @@ footer {
     gap: 2%;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-
-  #yoga-img {
-    width: 100%;
-    background: url(Images/desktop_books.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 25% 0;
-    z-index: 1;
-    border: 1px solid black;
   }
 
   #card {
