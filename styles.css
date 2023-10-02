@@ -23,7 +23,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 24px;
 }
 
@@ -138,11 +138,13 @@ main {
 }
 
 .headline-section h1 {
-  color: #ff6b00;
+  background: linear-gradient(to right, #f4ab0d, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 4em;
   margin-bottom: 12px;
 }
 
@@ -851,7 +853,7 @@ footer {
   }
 
   #name {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 20px;
     text-align: center;
@@ -954,7 +956,7 @@ footer {
     grid-column: 1/2;
     grid-row: 2/4;
     padding: 30%;
-    gap: 40px;
+    gap: 33px;
     margin: 0;
   }
   
