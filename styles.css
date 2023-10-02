@@ -28,7 +28,8 @@ header {
 }
 
 #name:hover {
-  transform: rotate(3deg);
+  color: #ff6b00;
+  transform: rotate(-3deg);  
 }
 
 .top-nav a {
@@ -167,10 +168,12 @@ main {
   border-radius: 50%;
   rotate: -3deg;
   background: url(Images/profile.png), #e58130;
-  background-size: contain;
+  background-size: 90%;
   width: 200px;
   height: 200px;
   margin: 30px auto;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 }
 
 .socials {
@@ -900,16 +903,17 @@ footer {
   main {
     height: 100vh;
     display: grid;
-    grid-template-columns: 10% 30% 60%;
+    grid-template-columns: 10% 50% 40%;
     grid-template-rows: 20% 15% 30% 15% 20%;
     align-items: center;
     padding-top: 4vh;
+    justify-items: center;
   }
 
   .headline-section {
     grid-column: 2/3;
     grid-row: 1/5;
-    align-self: center;
+    text-align: left;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -924,17 +928,17 @@ footer {
 
   .headline-section > h4 {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: rgba(255, 255, 255, 1);
     display: inline;
     margin: 0;
   }
 
   #description {
-    font-weight: 400;
-    font-size: 20px;
-    width: 111%;
-    line-height: 30px;
+    font-size: 1.2em;
+    line-height: 35px;
+    padding: 0;
+    max-width: 700px;
   }
 
   .socials {
@@ -943,6 +947,15 @@ footer {
     grid-column: 1/2;
     grid-row: 2/4;
     padding: 30%;
+    gap: 40px;
+    margin: 0;
+  }
+  
+  .profile {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    width: 400px;
+    height: 400px;
   }
 
   .work-section {
