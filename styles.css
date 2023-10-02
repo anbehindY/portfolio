@@ -831,6 +831,14 @@ footer {
   padding: 27px 10% 13px 10%;
 }
 
+.logo > i {
+  color: #172b4d;
+}
+
+.logo:hover {
+  color: #e58130;
+}
+
 #black-bar {
   width: 134px;
   height: 5px;
