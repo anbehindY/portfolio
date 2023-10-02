@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background: #3c3a39;
   padding: 0 24px;
   align-items: center;
@@ -19,11 +19,11 @@ header {
 
 #name {
   width: 100px;
-  color: #fff;
+  color: #fff5e1;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 24px;
 }
 
@@ -96,6 +96,11 @@ button {
   margin-bottom: 25px;
   padding-bottom: 10px;
   padding-left: 5%;
+}
+
+.nav-items > a:hover {
+  color: #e58130;
+  cursor: pointer;
 }
 
 .top-nav {
@@ -842,10 +847,11 @@ footer {
   header {
     height: 8vh;
     background: #3c3a39;
+    padding: 0;
   }
 
   #name {
-    font-size: 20px;
+    font-size: 1.6em;
     font-weight: 700;
     line-height: 20px;
     text-align: center;
@@ -865,16 +871,15 @@ footer {
 
   ul.top-nav {
     display: flex;
-    height: 120px;
-    width: 400px;
-    justify-content: flex-end;
-    gap: 20px;
+    height: 100px;
+    width: 300px;
+    gap: 50px;
     list-style: none;
+    position: fixed;
     left: 67%;
     top: -40px;
-    position: fixed;
     background: none;
-    padding-right: 50px;
+    margin-left: auto;
   }
 
   .nav-items {
@@ -883,6 +888,8 @@ footer {
     color: rgba(255, 255, 255, 1);
     border: none;
     height: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   .top-nav .nav-items:last-child {
@@ -892,7 +899,7 @@ footer {
   .nav-items a {
     color: inherit;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.2em;
     font-weight: 500;
   }
 
