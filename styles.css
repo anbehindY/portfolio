@@ -29,7 +29,7 @@ header {
 
 #name:hover {
   color: #ff6b00;
-  transform: rotate(-3deg);  
+  rotate: -3deg;
 }
 
 .top-nav a {
@@ -40,6 +40,11 @@ header {
   line-height: 40px;
   text-align: left;
   text-decoration: none;
+}
+
+.nav-items > a:hover {
+  color: #e58130;
+  cursor: pointer;
 }
 
 #name a {
@@ -96,11 +101,6 @@ button {
   margin-bottom: 25px;
   padding-bottom: 10px;
   padding-left: 5%;
-}
-
-.nav-items > a:hover {
-  color: #e58130;
-  cursor: pointer;
 }
 
 .top-nav {
@@ -967,7 +967,7 @@ footer {
     gap: 33px;
     margin: 0;
   }
-  
+
   .profile {
     grid-row: 2/4;
     grid-column: 3/4;
