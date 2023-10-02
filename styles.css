@@ -705,6 +705,10 @@ p.description.popup {
   padding-top: 20px;
 }
 
+.logo > i {
+  color: #172b4d;
+}
+
 .nested > li > i {
   font-size: 2.5em;
 }
@@ -832,10 +836,6 @@ footer {
   gap: 25px;
   justify-content: center;
   padding: 27px 10% 13px 10%;
-}
-
-.logo > i {
-  color: #172b4d;
 }
 
 .logo:hover {
@@ -1257,7 +1257,7 @@ footer {
   .nested {
     gap: 25px;
   }
-  
+
   .nested > li > i {
     font-size: 3em;
   }
