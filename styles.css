@@ -577,20 +577,19 @@ p.description.popup {
 
 .about-me {
   display: grid;
-  grid-template-rows: 563px 89px 1241.46px;
+  grid-template-rows: 563px 89px 1900px;
   grid-template-columns: 100%;
   background-color: #1c1a19;
   align-content: center;
   justify-content: center;
+  padding: 0 10px;
 }
 
 #about-me {
   grid-row: 1/2;
-  background-image: url(Images/matrix-2.svg), url(Images/matrix-3.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
   justify-items: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 #head > h1 {
@@ -598,13 +597,7 @@ p.description.popup {
   font-family: Crete Round, serif;
   font-size: 72px;
   font-weight: 400;
-  line-height: 88px;
-  letter-spacing: 0.3700000047683716px;
-  text-align: left;
-  margin: 120px 24px 0 24px;
-  padding: 0;
-  width: 327px;
-  height: 59px;
+  padding: 10px 24px 0 24px;
 }
 
 #head:hover {
@@ -613,13 +606,8 @@ p.description.popup {
 
 #text {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  width: 327px;
-  height: 148px;
+  font-size: 1.1em;
+  line-height: 28px;
   color: rgba(244, 245, 247, 1);
   margin: 24px 24px;
 }
@@ -630,6 +618,7 @@ p.description.popup {
   justify-self: center;
   height: 1px;
   border-top: 1px solid #fff;
+  margin-top: auto;
 }
 
 #resume {
@@ -646,6 +635,11 @@ p.description.popup {
   margin: 0 24px;
   text-align: center;
   display: inline;
+}
+
+#resume > a {
+  color: inherit;
+  text-decoration: none;
 }
 
 #resume:hover {
@@ -668,7 +662,7 @@ p.description.popup {
   grid-row: 3/4;
   text-align: center;
   color: #fff;
-  padding: 50px 0 0 0;
+  padding: 30px 0 0 0;
   margin-top: 50px;
 }
 
@@ -704,6 +698,15 @@ p.description.popup {
   line-height: 50px;
   margin-top: 20px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.nested > li > i {
+  font-size: 2.5em;
 }
 
 .contact-form {
@@ -716,7 +719,7 @@ p.description.popup {
 }
 
 #contact-header {
-  width: 327px;
+  width: 80%;
   height: 216px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1145,10 +1148,10 @@ footer {
     left: 92%;
   }
 
-  div.skill ul {
+  .skills {
     display: flex;
-    justify-content: flex-start;
-    gap: 10%;
+    justify-content: center;
+    gap: 12%;
     list-style: none;
   }
 
@@ -1205,7 +1208,7 @@ footer {
   }
 
   .about-me {
-    padding: 0 10%;
+    padding: 2% 8%;
     background:
       url(Desktop_icons/aboutme.svg),
       url(Desktop_icons/aboutme@2x.svg),
@@ -1213,7 +1216,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: 100% 9%;
-    grid-template-rows: 563px 89px 600px;
+    grid-template-rows: 563px 89px 880px;
   }
 
   #about-me {
@@ -1226,14 +1229,14 @@ footer {
   }
 
   #head > h1 {
-    margin: 0;
+    padding: 1% 0;
     height: 65px;
   }
 
   #text {
     margin: 0;
     height: auto;
-    width: 39%;
+    width: 50%;
     line-height: 30px;
   }
 
@@ -1248,13 +1251,15 @@ footer {
 
   .skill {
     width: 100%;
+    padding-top: 50px;
   }
 
   .nested {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .nested > li > i {
+    font-size: 3em;
   }
 
   .contact-form {

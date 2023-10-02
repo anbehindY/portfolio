@@ -5,15 +5,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Alfie's Portfolio</title>
-    <link rel="icon" type="image/png" href="./Images/profile.png" />
+		<link rel="icon" type="image/png" href="./Images/profile.png" />
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-    <script src="https://kit.fontawesome.com/ce489bc768.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/ce489bc768.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
@@ -23,11 +30,12 @@
 			<nav class="toolbar">
 				<ul class="top-nav">
 					<li class="nav-items"><a href="#portfolio">Projects</a></li>
-					<li class="nav-items"><a href="#about-me">About</a></li>
+					<li class="nav-items"><a href="#aboutMe">About</a></li>
 					<li class="nav-items"><a href="#contact-form">Contact</a></li>
 					<li class="nav-items">
 						<a href="mailto:yanminthwin@gmail.com"
-							><i class="fa-regular fa-envelope fa-lg"></i></a>
+							><i class="fa-regular fa-envelope fa-lg"></i
+						></a>
 					</li>
 				</ul>
 				<button type="submit" class="hamburger">
@@ -41,12 +49,12 @@
 				<h4>Full-stack Web Developer</h4>
 				<p id="description">
 					Specialized in React and Ruby on Rails, offering business solutions
-					for a variety of clients and enterprises. Let me assure you that with my
-					collaboration, you will reach your business goals much faster than you ever imagined.
+					for a variety of clients and enterprises. Let me assure you that with
+					my collaboration, you will reach your business goals much faster than
+					you ever imagined.
 				</p>
 			</section>
-      <div class="profile">
-      </div>
+			<div class="profile"></div>
 			<ul class="socials">
 				<li>
 					<a
@@ -54,9 +62,9 @@
 						href="https://github.com/anbehindY"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-github-alt"></i>
-          </a>
+					>
+						<i class="fa-brands fa-github-alt"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -64,9 +72,9 @@
 						href="https://www.linkedin.com/in/yan-min-thwin/"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
+					>
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -74,9 +82,9 @@
 						href="https://wellfound.com/u/yan-min-thwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-angellist"></i>
-          </a>
+					>
+						<i class="fa-brands fa-angellist"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -84,9 +92,9 @@
 						href="https://twitter.com/yanminthwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
+					>
+						<i class="fa-brands fa-x-twitter"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -94,9 +102,9 @@
 						href="https://medium.com/@yanminthwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-medium"></i>
-          </a>
+					>
+						<i class="fa-brands fa-medium"></i>
+					</a>
 				</li>
 			</ul>
 		</main>
@@ -116,53 +124,102 @@
 			<div id="modal-container"></div>
 		</section>
 		<!--About me section-->
-		<section class="about-me" title="Get to know me more">
+		<section class="about-me" title="Get to know me more" id="aboutMe">
 			<div id="about-me">
 				<div id="head">
 					<h1>About me</h1>
 				</div>
 				<div id="text">
 					<p>
-						Hello I’m a software developer! I can help you build a product ,
-						feature or website Look through some of my work and experience! If
-						you like what you see and have a project you need coded, don’t
-						hesitate to contact me.
+						Hello, my name is Yan Min Thwin. Previously, I was a medical student
+						studying at the University of Medicine (1) in Myanmar. During the
+						COVID-19 pandemic, all the universities were shut down, and since
+						then I started learning programming and decided to switch my career
+						completely. I’m currently pair-programming with remote professionals
+						from all over the world through the Microverse program. I recently
+						built a website for a local clinic where patients can view the list
+						of doctors with their details, and where patients can make a
+						reservation for their needs. I really enjoy building beautiful
+						websites with efficient features and I believe such kinda websites
+						will bring the audience wherever we want to.
 					</p>
 				</div>
-				<button type="submit" id="resume">Get My Resume</button>
+				<button type="submit" id="resume"><a href="./resume.pdf" download>Get My Resume</a></button>
 			</div>
 			<div id="devider"></div>
 			<div class="skill">
-				<ul>
+				<ul class="skills">
 					<li id="language">
 						<img src="Images/square-2.svg" alt="list icon" /> Language
 						<ul class="nested">
-							<li>Javascript</li>
-							<li>Ruby</li>
-							<li>Html</li>
-							<li>Css</li>
+							<li>
+								<i class="devicon-html5-plain-wordmark colored"></i>
+							</li>
+							<li>
+								<i class="devicon-css3-plain-wordmark colored"></i>
+							</li>
+							<li>
+								<i class="devicon-javascript-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-ruby-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-postgresql-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-mongodb-plain-wordmark colored"></i>
+							</li>
 						</ul>
 					</li>
 					<br />
 					<li id="frameworks">
 						<img src="Images/square.svg" alt="second list icon" /> Frameworks
 						<ul class="nested">
-							<li>React</li>
-							<li>Redux</li>
-							<li>Ruby on Rails</li>
-							<li>tailwindcss</li>
-							<li>Next.js</li>
+							<li>
+								<i class="devicon-react-original colored"></i>
+							</li>
+							<li>
+								<i class="devicon-redux-original colored"></i>
+							</li>
+							<li>
+								<i class="devicon-nextjs-original-wordmark"></i>
+							</li>
+							<li>
+								<i class="devicon-nodejs-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-tailwindcss-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-rails-plain colored"></i>
+							</li>
 						</ul>
 					</li>
 					<br />
 					<li id="skills">
-						<img src="Images/circle.svg" alt="last list icon" /> Skills
+						<img src="Images/circle.svg" alt="last list icon" /> Tools
 						<ul class="nested">
-							<li>Visual Studio Code</li>
-							<li>Github</li>
-							<li>Postman</li>
-							<li>Redux</li>
-							<li>Terminal</li>
+							<li>
+								<i class="devicon-vscode-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-git-plain colored"></i>
+							</li>
+							<li>
+								<i class="devicon-github-original"></i>
+							</li>
+							<li>
+								<i class="devicon-npm-original-wordmark colored"></i>
+							</li>
+							<li>
+								<i class="devicon-docker-plain-wordmark colored"></i>
+							</li>
+							<li>
+								<i class="devicon-canva-original colored"></i>
+							</li>
+
+							<li></li>
 						</ul>
 					</li>
 				</ul>
@@ -173,8 +230,8 @@
 			<form id="form" action="https://formspree.io/f/xayzobow" method="post">
 				<div id="ch-container">
 					<h1 id="contact-header">
-						I'm always interested in hearing about new projects, so if you'd
-						like to chat please get in touch.
+						I'm always interested in hearing about new projects. So if you'd
+						like to discuss more, feel free to leave a message.
 					</h1>
 				</div>
 				<div id="inputs">
@@ -229,9 +286,9 @@
 						href="https://github.com/anbehindY"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-github-alt"></i>
-          </a>
+					>
+						<i class="fa-brands fa-github-alt"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -239,9 +296,9 @@
 						href="https://www.linkedin.com/in/yan-min-thwin/"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
+					>
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -249,9 +306,9 @@
 						href="https://wellfound.com/u/yan-min-thwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-angellist"></i>
-          </a>
+					>
+						<i class="fa-brands fa-angellist"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -259,9 +316,9 @@
 						href="https://twitter.com/yanminthwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
+					>
+						<i class="fa-brands fa-x-twitter"></i>
+					</a>
 				</li>
 				<li>
 					<a
@@ -269,9 +326,9 @@
 						href="https://medium.com/@yanminthwin"
 						target="_blank"
 						rel="noopener"
-						>
-            <i class="fa-brands fa-medium"></i>
-          </a>
+					>
+						<i class="fa-brands fa-medium"></i>
+					</a>
 				</li>
 			</ul>
 			<div id="black-bar"></div>
