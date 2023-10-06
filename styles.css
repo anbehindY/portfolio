@@ -325,15 +325,15 @@ main {
 
 .modal {
   width: 90%;
-  height: 75vh;
+  height: 700px;
   padding: 4%;
   background: #fff;
   transform: scale(0);
   transition: 200ms ease-in-out;
   z-index: 10;
   position: fixed;
-  top: 0;
-  left: 5%;
+  top: 5%;
+  left: 3%;
 }
 
 .modal.active {
@@ -354,13 +354,10 @@ main {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 22px;
-  color: #172b4d;
-}
-
-.modal-heading.font-size {
   font-size: 1.3em;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #172b4d;
 }
 
 .close-btn {
@@ -395,6 +392,12 @@ main {
   margin-top: 15%;
 }
 
+.popup-img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
 #img10 {
   width: 100%;
   height: 240px;
@@ -408,7 +411,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
+  height: 200px;
 }
 
 p.description.popup {
@@ -426,36 +429,18 @@ p.description.popup {
   gap: 20px;
 }
 
-#seeLive {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 45%;
-}
-
-#seeSource {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 50%;
-}
-
-.seeLive,
-.seeSource {
+.link {
+  display: inline-flex;
   text-decoration: none;
   color: white;
-  display: inline-flex;
-  width: 100%;
-  align-items: center;
   gap: 5%;
+  align-items: center;
+  width: 140px;
 }
 
-.seeLive > img,
-.seeSource > img {
-  width: 25%;
-  height: 90%;
+.link > img {
+  width: 30px;
+  height: 30px;
 }
 
 .overlay.active {
@@ -484,12 +469,48 @@ p.description.popup {
 .card {
   width: 327px;
   height: 386px;
-  background: url(Images/papd.svg);
   margin: 24px 0;
+  border-radius: 11px;
+  border-bottom-left-radius: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card.techscape {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/techscape_1.png');
+}
+
+.card.mootv {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/mootv.png');
+}
+
+.card.calculator {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/math_magicians.png');
+}
+
+.card.got {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/got.png');
+}
+
+.card.space {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/space.png');
+}
+
+.card.budget {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/budget.png');
+}
+
+.card.techscape,
+.card.mootv,
+.card.calculator,
+.card.got,
+.card.space,
+.card.budget {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .description {
@@ -557,6 +578,7 @@ p.description.popup {
   padding: 12px;
   text-align: center;
   margin-top: -35px;
+  border-bottom-right-radius: 10px;
 }
 
 .project-button:hover {
@@ -573,6 +595,17 @@ p.description.popup {
 .project-button:disabled {
   background: rgba(244, 241, 240, 1);
   color: rgba(91, 89, 87, 1);
+}
+
+.project-button.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me {
@@ -1090,9 +1123,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(Desktop_icons/papdwhite.svg);
+    background: url(assets/check_it_out.png);
     border: 2px solid black;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card:hover .description {
@@ -1116,6 +1150,9 @@ footer {
     align-items: center;
   }
 
+  .popup-img {
+    height: 450px;
+  }
   .modal {
     width: 82%;
     height: 80vh;
@@ -1189,10 +1226,10 @@ footer {
 
   .right-section {
     width: 40%;
-    height: 100%;
-    display: flex;
+    height: 450px;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end; */
     gap: 52.5%;
   }
 
@@ -1203,7 +1240,6 @@ footer {
   }
 
   .button-container {
-    gap: 12px;
     width: 80%;
   }
 
