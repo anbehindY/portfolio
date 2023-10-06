@@ -1153,6 +1153,7 @@ footer {
   .popup-img {
     height: 450px;
   }
+
   .modal {
     width: 82%;
     height: 80vh;
@@ -1227,9 +1228,6 @@ footer {
   .right-section {
     width: 40%;
     height: 450px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end; */
     gap: 52.5%;
   }
 
