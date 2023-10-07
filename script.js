@@ -57,7 +57,7 @@ document.getElementById('first-project').innerHTML = ` <div id="img" style="back
                           <li>${firstCardInfo.tech_stack.tech2}</li>
                         </ul>
                       </div>
-                      <button id="project-button" type="submit" href='#modal'>See Project</button>
+                      <button id="project-button" type="button" href='#modal'>See Project</button>
                     </div>`;
 
 // Styling the first card
@@ -91,8 +91,8 @@ const modalfirst = `<div id="modal "class="modal">
                         <div class="right-section">
                           <p class="description popup">${firstCardInfo.details}</>
                           <div class="button-container">
-                            <button type="submit" id="seeLive" class="project-button popup"><a class="seeLive" href="https://anbehindy.github.io/Books-Collection/#" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
-                            <button type="submit" id="seeSource" class="project-button popup"><a class="seeSource" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
+                            <button type="submit" class="project-button popup"><a class="link" href="https://anbehindy.github.io/Books-Collection/#" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
+                            <button type="submit" class="project-button popup"><a class="link" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                           </div>
                         </div>
                       </div>
@@ -118,94 +118,91 @@ firstButton.onclick = firstModal;
 const cardsInfo = [
   {
     id: 1,
-    class: 'more',
-    image: '#',
-    title: 'Profesional Art',
-    title2: 'Multi-Post Stories',
+    class: 'techscape',
+    image: 'techscape_1.png',
+    title: 'TechScape@3AM',
     details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: 'Techscape@3AM is a user interface for sharing technical knowledge to technical and non-technical people by programs, blogs, and conferences.',
     tech_stack: {
-      tech0: 'CSS',
       tech1: 'HTML',
-      tech2: 'JavaScript',
-      tech3: 'Ruby',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://anbehindy.github.io/Techscape-3AM/index.html',
+    sourceLink: 'https://github.com/anbehindY/Techscape-3AM',
   },
   {
     id: 2,
-    class: 'healthCare',
-    image: '#',
-    title: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    class: 'mootv',
+    image: 'mootv.png',
+    title: 'MooTV',
+    description: 'MooTV is a single page web application, which uses the TV Maze open api to get data about the movies and series.',
     tech_stack: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://anbehindy.github.io/JS-Capstone/dist/',
+    sourceLink: 'https://github.com/anbehindY/JS-Capstone',
   },
   {
     id: 3,
-    class: 'website',
-    image: '#',
-    title: 'Website Portfollio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    class: 'calculator',
+    image: 'math_magicians.png',
+    title: 'Math Magicians',
+    description: 'Math Magicians is a single page application built with React. It can be used to deal with simple calculations and to display a random quote.',
     tech_stack: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'React',
+      tech2: 'CSS',
+      tech3: 'API',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://math-magicians-ua6d.onrender.com',
+    sourceLink: 'https://github.com/anbehindY/math-magicians',
   },
   {
     id: 4,
-    class: 'more',
-    image: '#',
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    class: 'space',
+    image: 'space.png',
+    title: 'Space Travel Hub',
+    description: 'Space Travel Hub describes a number of features related to the rockets, and missions associated with space travel services',
     tech_stack: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'React',
+      tech2: 'Redux',
+      tech3: 'API',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://space-travel-hub.onrender.com/',
+    sourceLink: 'https://github.com/mercymugambi/space-travel-project',
   },
   {
     id: 5,
-    class: 'healthCare',
-    image: '#',
-    title: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    class: 'got',
+    image: 'got.png',
+    title: 'GOT Characters',
+    description: 'Game of thrones characters is a single-page web application. A list of houses and characters from the GOT TV shows are displayed.',
     tech_stack: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'React',
+      tech2: 'Redux',
+      tech3: 'API',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://mellifluous-haupia-bcf5dd.netlify.app/',
+    sourceLink: 'https://github.com/anbehindY/game-of-thrones-characters',
   },
   {
     id: 6,
-    class: 'website',
-    image: '#',
-    title: 'Website Portfollio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    class: 'budget',
+    image: 'budget.png',
+    title: 'Budget Tracker',
+    description: 'Budget Tracker is a web application that allows users to track their expenses and incomes.',
     tech_stack: {
-      tech1: 'html',
-      tech2: 'bootstrap',
-      tech3: 'Ruby',
+      tech1: 'Rails',
+      tech2: 'TailwindCSS',
+      tech3: 'PostgreSQL',
     },
-    liveLink: '#',
-    sourceLink: 'https://github.com/anbehindY',
+    liveLink: 'https://budget-tracker-first-release.onrender.com/',
+    sourceLink: 'https://github.com/anbehindY/Budget-Tracker',
   },
 ];
 
@@ -239,7 +236,7 @@ const popupInfo = (projectId) => {
   checked = checked.shift();
   const modalBox = ` <div id="modal "class="modal">
                         <header class='modal-header'>
-                          <h1 class="modal-heading font-size">${checked.title}</h1>
+                          <h1 class="modal-heading">${checked.title}</h1>
                           <div class="close-btn">
                             <div class="rotator1"></div>
                             <div class="rotator2"></div>
@@ -253,12 +250,16 @@ const popupInfo = (projectId) => {
                           </ul>
                         </div>
                         <div class="content">
-                          <div id="img10"></div>
+                          <div><img src="assets/${checked.image}" class='popup-img' /></div>
                           <div class="right-section">
                             <p class="description popup">${checked.description}</p>
                             <div class="button-container">
-                              <button type="submit" id="seeLive" class="project-button popup">See Live<img src="icons/seeLive.svg" /></button>
-                              <button type="submit" id="seeSource" class="project-button popup">See Source<img src="icons/seeSource.svg" /></button>
+                              <button type="submit" class="project-button popup">
+                                <div class='link-wrapper'>
+                                  <a class="link" href=${checked.liveLink} target="_blank">See Live<img src="icons/seeLive.svg" /></a>
+                                </div>
+                              </button>
+                              <button type="submit" class="project-button popup"><a class="link" href=${checked.sourceLink} target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                             </div>
                           </div>
                         </div>
