@@ -4,10 +4,14 @@
   margin: 0;
 }
 
+html {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background: #3c3a39;
   padding: 0 24px;
@@ -108,7 +112,7 @@ button {
   list-style: none;
   background: #262626;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 100%;
   z-index: 0;
@@ -126,7 +130,7 @@ button {
 }
 
 main {
-  height: 100vh;
+  height: 900px;
   background: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -240,7 +244,7 @@ main {
 
 #img {
   width: 100%;
-  height: 55vh;
+  height: 225px;
 }
 
 #img:hover {
@@ -325,7 +329,7 @@ main {
 
 .modal {
   width: 90%;
-  height: 700px;
+  height: 650px;
   padding: 4%;
   background: #fff;
   transform: scale(0);
@@ -333,7 +337,7 @@ main {
   z-index: 10;
   position: fixed;
   top: 5%;
-  left: 3%;
+  left: 5%;
 }
 
 .modal.active {
@@ -543,7 +547,7 @@ p.description.popup {
 
 .tech-stack {
   justify-content: space-between;
-  margin: 12px 75px 0 16px;
+  margin: 12px 75px 30px 16px;
   width: 100%;
 }
 
@@ -609,25 +613,17 @@ p.description.popup {
 }
 
 .about-me {
-  display: grid;
-  grid-template-rows: 563px 89px 1900px;
-  grid-template-columns: 100%;
   background-color: #1c1a19;
-  align-content: center;
-  justify-content: center;
   padding: 0 10px;
 }
 
 #about-me {
-  grid-row: 1/2;
-  justify-items: center;
-  align-items: center;
   padding: 20px 0;
 }
 
 #head > h1 {
   color: rgba(255, 107, 0, 1);
-  font-family: Crete Round, serif;
+  font-family: 'Crete Round', serif;
   font-size: 72px;
   font-weight: 400;
   padding: 10px 24px 0 24px;
@@ -646,12 +642,10 @@ p.description.popup {
 }
 
 #devider {
-  grid-row: 2/3;
   width: 90%;
-  justify-self: center;
+  margin: 15px auto 0 auto;
   height: 1px;
   border-top: 1px solid #fff;
-  margin-top: auto;
 }
 
 #resume {
@@ -692,11 +686,11 @@ p.description.popup {
 }
 
 .skill {
-  grid-row: 3/4;
   text-align: center;
   color: #fff;
   padding: 30px 0 0 0;
   margin-top: 50px;
+  height: 1900px;
 }
 
 #language {
@@ -1151,7 +1145,7 @@ footer {
   }
 
   .popup-img {
-    height: 450px;
+    height: 400px;
   }
 
   .modal {
@@ -1215,19 +1209,14 @@ footer {
     margin-top: 0;
   }
 
-  #img10 {
-    background: url(Images/desktop_books.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 1px solid black;
-    margin: 0;
-    width: 60%;
-    height: 100%;
+  #img {
+    width: 100%;
+    height: 300px;
   }
 
   .right-section {
     width: 40%;
-    height: 450px;
+    height: 400px;
     gap: 52.5%;
   }
 
@@ -1242,7 +1231,7 @@ footer {
   }
 
   .about-me {
-    padding: 2% 8%;
+    padding: 4% 8%;
     background:
       url(Desktop_icons/aboutme.svg),
       url(Desktop_icons/aboutme@2x.svg),
@@ -1250,7 +1239,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: 100% 9%;
-    grid-template-rows: 563px 89px 880px;
+    height: 1500px;
   }
 
   #about-me {
@@ -1281,11 +1270,13 @@ footer {
 
   #devider {
     width: 100%;
+    margin-top: 20px;
   }
 
   .skill {
     width: 100%;
     padding-top: 50px;
+    height: auto;
   }
 
   .nested {
