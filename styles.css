@@ -1008,7 +1008,7 @@ footer {
   .work-section {
     grid-template-columns: 100%;
     grid-template-rows: 0.5fr 0.5fr 2fr 5fr;
-    padding: 10% 8% 0 8%;
+    padding: 8% 8% 0 8%;
   }
 
   #heading-bar {
