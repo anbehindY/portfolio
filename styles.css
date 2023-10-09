@@ -862,7 +862,7 @@ footer {
   list-style: none;
   gap: 25px;
   justify-content: center;
-  padding: 27px 10% 13px 10%;
+  padding: 27px 10px 13px 10px;
 }
 
 .logo:hover {
