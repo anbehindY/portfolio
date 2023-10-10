@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-html {
-  margin: 0;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -1306,6 +1302,10 @@ footer {
     width: 455px;
   }
 
+  .contact-form {
+    padding: 150px 0 30px 0;
+  }
+  
   #contact-header {
     text-align: left;
     width: 380px;
