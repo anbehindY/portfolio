@@ -741,7 +741,7 @@ p.description.popup {
 }
 
 .contact-form {
-  padding: 120px 24px 124px 24px;
+  padding: 60px 24px 124px 24px;
 }
 
 #ch-container {
@@ -751,7 +751,7 @@ p.description.popup {
 
 #contact-header {
   width: 80%;
-  height: 216px;
+  height: 300px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
