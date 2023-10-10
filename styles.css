@@ -684,9 +684,9 @@ p.description.popup {
 .skill {
   text-align: center;
   color: #fff;
-  padding: 30px 0 0 0;
-  margin-top: 50px;
+  margin: 80px auto 0 auto;
   height: 1900px;
+  list-style-position: inside;
 }
 
 #language {
@@ -1091,7 +1091,7 @@ footer {
   .card.techscape:hover {
     background: url(assets/techscape_1.png);
   }
- 
+
   .card.mootv:hover {
     background: url(assets/mootv.png);
   }
