@@ -174,7 +174,7 @@ main {
 .profile {
   border-radius: 50%;
   rotate: -3deg;
-  background: url(Images/profile.png), #e58130;
+  background: url(assets/profile.png), #e58130;
   background-size: 90%;
   width: 200px;
   height: 200px;
@@ -401,7 +401,7 @@ main {
 #img10 {
   width: 100%;
   height: 240px;
-  background: url(Images/desktop_books.png);
+  background: url(assets/books.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -695,6 +695,7 @@ p.description.popup {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  list-style-image: url(list_styles/square-2.svg);
 }
 
 #frameworks {
@@ -703,6 +704,7 @@ p.description.popup {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  list-style-image: url(list_styles/square.svg);
 }
 
 #skills {
@@ -711,6 +713,7 @@ p.description.popup {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  list-style-image: url(list_styles/circle.svg);
 }
 
 .nested {
@@ -799,7 +802,7 @@ textarea {
   line-height: 24px;
   padding: 15px;
   border: none;
-  background: url(icons/Resizer\ Handle.svg), #fbf8f7;
+  background: url(icons/resizer.svg), #fbf8f7;
   background-repeat: no-repeat;
   background-position: bottom right;
   resize: none;
@@ -1183,8 +1186,8 @@ footer {
   .skills {
     display: flex;
     justify-content: center;
-    gap: 12%;
-    list-style: none;
+    gap: 13%;
+    padding-right: 3%;
   }
 
   .tech-box.popup {
@@ -1231,10 +1234,10 @@ footer {
   }
 
   .about-me {
-    padding: 4% 8%;
+    padding: 4% 6%;
     background:
-      url(Desktop_icons/aboutme.svg),
-      url(Desktop_icons/aboutme@2x.svg),
+      url(Background/aboutme.svg),
+      url(Background/aboutme@2x.svg),
       #262626;
     background-repeat: no-repeat;
     background-size: 40%;

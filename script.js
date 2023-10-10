@@ -29,7 +29,7 @@ const closeModal = () => {
 const firstCardInfo = {
   id: 1,
   class: 'more',
-  image: 'desktop_books.png',
+  image: 'books.png',
   title2: 'Books Collection',
   details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   tech_stack: {
@@ -40,7 +40,7 @@ const firstCardInfo = {
 };
 
 // Displays the first card with details
-document.getElementById('first-project').innerHTML = ` <div id="img" style="background: url(Images/desktop_books.png)"></div>
+document.getElementById('first-project').innerHTML = `<div id="img"></div>
                     <div id="card">
                       <div id="main-text">
                         <h3>${firstCardInfo.title2}</h3>
@@ -63,7 +63,7 @@ document.getElementById('first-project').innerHTML = ` <div id="img" style="back
 // Styling the first card
 const img = document.getElementById('img');
 img.style.width = '100%';
-img.style.background = `url(Images/${firstCardInfo.image})`;
+img.style.background = `url(assets/${firstCardInfo.image})`;
 img.style.backgroundRepeat = 'no-repeat';
 img.style.backgroundSize = 'cover';
 img.style.backgroundPosition = '25% 0';
