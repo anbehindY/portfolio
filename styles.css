@@ -543,8 +543,8 @@ p.description.popup {
 
 .tech-stack {
   justify-content: space-between;
-  margin: 12px 75px 30px 16px;
-  width: 100%;
+  margin: 12px 0 30px 16px;
+  width: 320px;
 }
 
 .tech-stack ul {
