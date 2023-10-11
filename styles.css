@@ -155,9 +155,35 @@ main {
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
-  height: 27px;
+  height: 30px;
   min-width: 327px;
   margin-bottom: 10px;
+}
+
+.roles {
+  position: relative;
+  overflow: hidden;
+}
+
+.roles.first-role::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: #1c1a19;
+  top: 0;
+  left: 20%;
+  border-left: 2px solid #fff5e1;
+  animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 80%
+  }
+  100% {
+    left: 20%;
+  }
 }
 
 #description {
@@ -970,6 +996,27 @@ footer {
     color: rgba(255, 255, 255, 1);
     display: inline;
     margin: 0;
+  }
+
+  .roles.first-role::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #1c1a19;
+    top: 0;
+    left: 0;
+    border-left: 2px solid #fff5e1;
+    animation: animate 4s steps(20) infinite;
+  }
+  
+  @keyframes animate {
+    40%, 60% {
+      left: 36%
+    }
+    100% {
+      left: 0;
+    }
   }
 
   #description {
