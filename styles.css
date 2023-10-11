@@ -178,9 +178,11 @@ main {
 }
 
 @keyframes animate {
-  40%, 60% {
-    left: 80%
+  40%,
+  60% {
+    left: 80%;
   }
+
   100% {
     left: 20%;
   }
@@ -1009,11 +1011,13 @@ footer {
     border-left: 2px solid #fff5e1;
     animation: animate 4s steps(20) infinite;
   }
-  
+
   @keyframes animate {
-    40%, 60% {
-      left: 36%
+    40%,
+    60% {
+      left: 36%;
     }
+
     100% {
       left: 0;
     }
