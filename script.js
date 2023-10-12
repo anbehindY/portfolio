@@ -10,9 +10,9 @@ const interactiveText = () => {
     } else {
       role.innerText = 'Front-end Developer';
     }
-  }
-  , 4000);
-}
+  },
+  4000);
+};
 interactiveText();
 
 // Interactivity for mobile hamburger CSS icon
