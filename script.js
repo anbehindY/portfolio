@@ -1,15 +1,17 @@
 // Interactivity for intro section
 const role = document.querySelector('.first-role');
 const interactiveText = () => {
-  setTimeout(() => {
-    role.textContent = 'Front-end Developer';
-  }, 0);
-  setTimeout(() => {
-    role.textContent = 'Back-end Developer';
-  }, 4000);
-  setTimeout(() => {
-    role.textContent = 'Full-stack Developer';
-  }, 8000);
+  role.innerText = 'Front-end Developer';
+  setInterval(() => {
+    if (role.innerText === 'Front-end Developer') {
+      role.innerText = 'Back-end Developer';
+    } else if (role.innerText === 'Back-end Developer') {
+      role.innerText = 'Full-stack Developer';
+    } else {
+      role.innerText = 'Front-end Developer';
+    }
+  }
+  , 4000);
 }
 interactiveText();
 
