@@ -80,6 +80,7 @@ header {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .hamburger.active::before {
@@ -685,6 +686,7 @@ p.description.popup {
   margin: 0 24px;
   text-align: center;
   display: inline;
+  transition: all 0.2s ease-out;
 }
 
 #resume > a {
@@ -861,6 +863,7 @@ form div {
   color: #fff;
   text-align: center;
   letter-spacing: 0.03em;
+  transition: all 0.2s ease-in-out;
 }
 
 #button:hover {
@@ -1107,6 +1110,10 @@ footer {
   .tech-box {
     margin-top: 5%;
   }
+  
+  .project-button {
+    width: 370px;
+  }
 
   #project-button {
     margin-top: 5%;
@@ -1128,16 +1135,16 @@ footer {
     height: 435px;
     align-items: flex-end;
     display: flex;
-    transition: all 0.1s ease-out;
   }
 
   .card .description {
     margin-bottom: 15px;
     margin-top: 44%;
+    transition: all 0.4s ease-in-out;
   }
 
   .card > .project-button {
-    visibility: hidden;
+    transform: scale(0);
   }
 
   .card.techscape:hover {
@@ -1179,13 +1186,13 @@ footer {
   }
 
   .card:hover .description {
-    display: none;
+    transform: scale(0);
   }
 
   .card:hover > .project-button {
     margin-top: 0;
     width: 100%;
-    visibility: visible;
+    transform: scale(1);
   }
 
   .tech-stack {
