@@ -48,7 +48,7 @@ const firstCardInfo = {
   class: 'more',
   image: 'books.png',
   title2: 'Books Collection',
-  details: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  details: 'An single-page application intended to store books with it\'s title and author\'s in local storage and then display it in the collection page',
   tech_stack: {
     tech0: 'HTML',
     tech1: 'CSS',
