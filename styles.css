@@ -829,10 +829,12 @@ textarea {
   line-height: 24px;
   padding: 15px;
   border: none;
+  background: #fbf8f7;
+}
+
+::-webkit-resizer {
   background: url(icons/resizer.svg), #fbf8f7;
-  background-repeat: no-repeat;
   background-position: bottom right;
-  resize: none;
 }
 
 input:focus,
