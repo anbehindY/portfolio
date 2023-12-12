@@ -55,7 +55,7 @@ This is implemented by referencing some figma templates.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [<a href="https://anbehindy.github.io/Portfolio_setup/" target="_blank">Online version</a>](#)
+- [<a href="https://anbehindy.github.io/portfolio/" target="_blank">Online version</a>](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
