@@ -46,13 +46,13 @@ const closeModal = () => {
 const firstCardInfo = {
   id: 1,
   class: 'more',
-  image: 'books.png',
-  title2: 'Books Collection',
-  details: 'An single-page application intended to store books with it\'s title and author\'s in local storage and then display it in the collection page',
+  image: 'melo.png',
+  title2: 'Melo Music',
+  details: 'Melo-Music is a landing page built on top of React and TailwindCSS. With Melo Music, you can download and enjoy wide varieties of songs from classic traditional songs to epic trending music genres.',
   tech_stack: {
-    tech0: 'HTML',
-    tech1: 'CSS',
-    tech2: 'JavaScript',
+    tech0: 'React',
+    tech1: 'TailwindCSS',
+    tech2: 'Next.js',
   },
 };
 
@@ -108,7 +108,7 @@ const modalfirst = `<div id="modal "class="modal">
                         <div class="right-section">
                           <p class="description popup">${firstCardInfo.details}</>
                           <div class="button-container">
-                            <button type="submit" class="project-button popup"><a class="link" href="https://anbehindy.github.io/Books-Collection/#" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
+                            <button type="submit" class="project-button popup"><a class="link" href="https://melo-music-git-dev-alfie-yangs-projects.vercel.app" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
                             <button type="submit" class="project-button popup"><a class="link" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                           </div>
                         </div>
