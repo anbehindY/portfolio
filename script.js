@@ -1,63 +1,67 @@
 // Interactivity for intro section
-const role = document.querySelector('.first-role');
+const role = document.querySelector(".first-role");
 const interactiveText = () => {
-  role.innerText = 'Front-end Developer';
+  role.innerText = "Front-end Developer";
   setInterval(() => {
-    if (role.innerText === 'Front-end Developer') {
-      role.innerText = 'Back-end Developer';
-    } else if (role.innerText === 'Back-end Developer') {
-      role.innerText = 'Full-stack Developer';
+    if (role.innerText === "Front-end Developer") {
+      role.innerText = "Back-end Developer";
+    } else if (role.innerText === "Back-end Developer") {
+      role.innerText = "Full-stack Developer";
     } else {
-      role.innerText = 'Front-end Developer';
+      role.innerText = "Front-end Developer";
     }
-  },
-  4000);
+  }, 4000);
 };
 interactiveText();
 
 // Interactivity for mobile hamburger CSS icon
-const hamburger = document.querySelector('.hamburger');
-const mobileNav = document.querySelector('.top-nav');
-const navItems = document.querySelectorAll('.nav-items');
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".top-nav");
+const navItems = document.querySelectorAll(".nav-items");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
 });
 
-hamburger.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
 });
 
-navItems.forEach((navItem) => navItem.addEventListener('click', () => {
-  document.querySelector('.hamburger').classList.remove('active');
-  mobileNav.classList.remove('active');
-}));
+navItems.forEach((navItem) =>
+  navItem.addEventListener("click", () => {
+    document.querySelector(".hamburger").classList.remove("active");
+    mobileNav.classList.remove("active");
+  })
+);
 
 // Action for closing every modal
 const closeModal = () => {
-  const modal = document.querySelector('.modal');
-  const overlay = document.querySelector('.overlay');
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
-  document.getElementById('modal-container').removeChild(document.querySelector('.modal'));
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
+  document
+    .getElementById("modal-container")
+    .removeChild(document.querySelector(".modal"));
 };
 
 // Object containing the first card details
 const firstCardInfo = {
   id: 1,
-  class: 'more',
-  image: 'melo.png',
-  title2: 'Melo Music',
-  details: 'Melo-Music is a landing page built on top of React and TailwindCSS. With Melo Music, you can download and enjoy wide varieties of songs from classic traditional songs to epic trending music genres.',
+  class: "more",
+  image: "melo.png",
+  title2: "Melo Music",
+  details:
+    "Melo-Music is a landing page built on top of React and TailwindCSS. With Melo Music, you can download and enjoy wide varieties of songs from classic traditional songs to epic trending music genres.",
   tech_stack: {
-    tech0: 'React',
-    tech1: 'TailwindCSS',
-    tech2: 'Next.js',
+    tech0: "React",
+    tech1: "TailwindCSS",
+    tech2: "Next.js",
   },
 };
 
 // Displays the first card with details
-document.getElementById('first-project').innerHTML = `<div id="img"></div>
+document.getElementById("first-project").innerHTML = `<div id="img"></div>
                     <div id="card">
                       <div id="main-text">
                         <h3>${firstCardInfo.title2}</h3>
@@ -78,14 +82,14 @@ document.getElementById('first-project').innerHTML = `<div id="img"></div>
                     </div>`;
 
 // Styling the first card
-const img = document.getElementById('img');
-img.style.width = '100%';
+const img = document.getElementById("img");
+img.style.width = "100%";
 img.style.background = `url(assets/${firstCardInfo.image})`;
-img.style.backgroundRepeat = 'no-repeat';
-img.style.backgroundSize = 'cover';
-img.style.backgroundPosition = '25% 0';
-img.style.zIndex = '1';
-img.style.border = '1px solid black';
+img.style.backgroundRepeat = "no-repeat";
+img.style.backgroundSize = "cover";
+img.style.backgroundPosition = "25% 0";
+img.style.zIndex = "1";
+img.style.border = "1px solid black";
 
 // Popup modal for the first card(will be executed when the user clicks on the first card button)
 const modalfirst = `<div id="modal "class="modal">
@@ -108,7 +112,7 @@ const modalfirst = `<div id="modal "class="modal">
                         <div class="right-section">
                           <p class="description popup">${firstCardInfo.details}</>
                           <div class="button-container">
-                            <button type="submit" class="project-button popup"><a class="link" href="https://melo-music-git-dev-alfie-yangs-projects.vercel.app" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
+                            <button type="submit" class="project-button popup"><a class="link" href="https://melo-music-beta.vercel.app/" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
                             <button type="submit" class="project-button popup"><a class="link" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                           </div>
                         </div>
@@ -118,113 +122,120 @@ const modalfirst = `<div id="modal "class="modal">
 
 // Action for displaying the modal for the first card
 const firstModal = () => {
-  document.getElementById('modal-container').innerHTML = modalfirst;
-  const modal = document.querySelector('.modal');
-  const overlay = document.querySelector('.overlay');
-  modal.classList.add('active');
-  overlay.classList.add('active');
-  const closeBtn = document.querySelector('.close-btn');
+  document.getElementById("modal-container").innerHTML = modalfirst;
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  modal.classList.add("active");
+  overlay.classList.add("active");
+  const closeBtn = document.querySelector(".close-btn");
   closeBtn.onclick = closeModal;
 };
 
 // Displays the modal for the first card when the user clicks on the first card button
-const firstButton = document.getElementById('project-button');
+const firstButton = document.getElementById("project-button");
 firstButton.onclick = firstModal;
 
 // Array of objects which contain details of each card except the first card
 const cardsInfo = [
   {
     id: 1,
-    class: 'techscape',
-    image: 'techscape_1.png',
-    title: 'TechScape@3AM',
+    class: "techscape",
+    image: "techscape_1.png",
+    title: "TechScape@3AM",
     details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    description: 'Techscape@3AM is a user interface for sharing technical knowledge to technical and non-technical people by programs, blogs, and conferences.',
+    description:
+      "Techscape@3AM is a user interface for sharing technical knowledge to technical and non-technical people by programs, blogs, and conferences.",
     tech_stack: {
-      tech1: 'HTML',
-      tech2: 'CSS',
-      tech3: 'JavaScript',
+      tech1: "HTML",
+      tech2: "CSS",
+      tech3: "JavaScript",
     },
-    liveLink: 'https://anbehindy.github.io/Techscape-3AM/index.html',
-    sourceLink: 'https://github.com/anbehindY/Techscape-3AM',
+    liveLink: "https://anbehindy.github.io/Techscape-3AM/index.html",
+    sourceLink: "https://github.com/anbehindY/Techscape-3AM",
   },
   {
     id: 2,
-    class: 'mootv',
-    image: 'mootv.png',
-    title: 'MooTV',
-    description: 'MooTV is a single page web application, which uses the TV Maze open api to get data about the movies and series.',
+    class: "mootv",
+    image: "mootv.png",
+    title: "MooTV",
+    description:
+      "MooTV is a single page web application, which uses the TV Maze open api to get data about the movies and series.",
     tech_stack: {
-      tech1: 'HTML',
-      tech2: 'CSS',
-      tech3: 'JavaScript',
+      tech1: "HTML",
+      tech2: "CSS",
+      tech3: "JavaScript",
     },
-    liveLink: 'https://anbehindy.github.io/JS-Capstone/dist/',
-    sourceLink: 'https://github.com/anbehindY/JS-Capstone',
+    liveLink: "https://anbehindy.github.io/JS-Capstone/dist/",
+    sourceLink: "https://github.com/anbehindY/JS-Capstone",
   },
   {
     id: 3,
-    class: 'calculator',
-    image: 'math_magicians.png',
-    title: 'Math Magicians',
-    description: 'Math Magicians is a single page application built with React. It can be used to deal with simple calculations and to display a random quote.',
+    class: "calculator",
+    image: "math_magicians.png",
+    title: "Math Magicians",
+    description:
+      "Math Magicians is a single page application built with React. It can be used to deal with simple calculations and to display a random quote.",
     tech_stack: {
-      tech1: 'React',
-      tech2: 'CSS',
-      tech3: 'API',
+      tech1: "React",
+      tech2: "CSS",
+      tech3: "API",
     },
-    liveLink: 'https://math-magicians-ua6d.onrender.com',
-    sourceLink: 'https://github.com/anbehindY/math-magicians',
+    liveLink: "https://math-magicians-ua6d.onrender.com",
+    sourceLink: "https://github.com/anbehindY/math-magicians",
   },
   {
     id: 4,
-    class: 'space',
-    image: 'space.png',
-    title: 'Space Travel Hub',
-    description: 'Space Travel Hub describes a number of features related to the rockets, and missions associated with space travel services',
+    class: "space",
+    image: "space.png",
+    title: "Space Travel Hub",
+    description:
+      "Space Travel Hub describes a number of features related to the rockets, and missions associated with space travel services",
     tech_stack: {
-      tech1: 'React',
-      tech2: 'Redux',
-      tech3: 'API',
+      tech1: "React",
+      tech2: "Redux",
+      tech3: "API",
     },
-    liveLink: 'https://space-travel-hub.onrender.com/',
-    sourceLink: 'https://github.com/mercymugambi/space-travel-project',
+    liveLink: "https://space-travel-hub.onrender.com/",
+    sourceLink: "https://github.com/mercymugambi/space-travel-project",
   },
   {
     id: 5,
-    class: 'got',
-    image: 'got.png',
-    title: 'GOT Characters',
-    description: 'Game of thrones characters is a single-page web application. A list of houses and characters from the GOT TV shows are displayed.',
+    class: "got",
+    image: "got.png",
+    title: "GOT Characters",
+    description:
+      "Game of thrones characters is a single-page web application. A list of houses and characters from the GOT TV shows are displayed.",
     tech_stack: {
-      tech1: 'React',
-      tech2: 'Redux',
-      tech3: 'API',
+      tech1: "React",
+      tech2: "Redux",
+      tech3: "API",
     },
-    liveLink: 'https://mellifluous-haupia-bcf5dd.netlify.app/',
-    sourceLink: 'https://github.com/anbehindY/game-of-thrones-characters',
+    liveLink: "https://mellifluous-haupia-bcf5dd.netlify.app/",
+    sourceLink: "https://github.com/anbehindY/game-of-thrones-characters",
   },
   {
     id: 6,
-    class: 'budget',
-    image: 'budget.png',
-    title: 'Budget Tracker',
-    description: 'Budget Tracker is a web application that allows users to track their expenses and incomes.',
+    class: "budget",
+    image: "budget.png",
+    title: "Budget Tracker",
+    description:
+      "Budget Tracker is a web application that allows users to track their expenses and incomes.",
     tech_stack: {
-      tech1: 'Rails',
-      tech2: 'TailwindCSS',
-      tech3: 'PostgreSQL',
+      tech1: "Rails",
+      tech2: "TailwindCSS",
+      tech3: "PostgreSQL",
     },
-    liveLink: 'https://budget-tracker-first-release.onrender.com/',
-    sourceLink: 'https://github.com/anbehindY/Budget-Tracker',
+    liveLink: "https://budget-tracker-first-release.onrender.com/",
+    sourceLink: "https://github.com/anbehindY/Budget-Tracker",
   },
 ];
 
 // Extracting each card's details from the array and insert it inside each card
-const card = cardsInfo.map((cardInfo) => `<div class="card ${cardInfo.class}">
+const card = cardsInfo.map(
+  (cardInfo) => `<div class="card ${cardInfo.class}">
                     <div class="description">
                       <div class="heading">${cardInfo.title}</div>
                         <div class="support-text">
@@ -241,15 +252,18 @@ const card = cardsInfo.map((cardInfo) => `<div class="card ${cardInfo.class}">
                         </div>
                       </div>
                     <button id=${cardInfo.id} type="submit" class="project-button popup">See Project</button>
-                  </div> `);
+                  </div> `
+);
 
 // Displays a collection of cards with details
-document.querySelector('.card-container').innerHTML = card.join('');
+document.querySelector(".card-container").innerHTML = card.join("");
 
 // Popup modal for each card
 const popupInfo = (projectId) => {
   if (projectId == null) return;
-  let checked = cardsInfo.filter((cardInfo) => cardInfo.id === parseInt(projectId, 10));
+  let checked = cardsInfo.filter(
+    (cardInfo) => cardInfo.id === parseInt(projectId, 10)
+  );
   checked = checked.shift();
   const modalBox = ` <div id="modal "class="modal">
                         <header class='modal-header'>
@@ -282,31 +296,34 @@ const popupInfo = (projectId) => {
                         </div>
                       </div>
                       <div class="overlay"></div>`;
-  document.getElementById('modal-container').innerHTML = modalBox;
-  const modal = document.querySelector('.modal');
-  const overlay = document.querySelector('.overlay');
-  modal.classList.add('active');
-  overlay.classList.add('active');
-  const closeBtns = document.querySelectorAll('.close-btn');
-  closeBtns.forEach((btn) => btn.addEventListener('click', closeModal));
+  document.getElementById("modal-container").innerHTML = modalBox;
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  modal.classList.add("active");
+  overlay.classList.add("active");
+  const closeBtns = document.querySelectorAll(".close-btn");
+  closeBtns.forEach((btn) => btn.addEventListener("click", closeModal));
 };
 
 // Displays the modal for each card when the user clicks on the card button
-const popupBtn = document.querySelectorAll('.project-button.popup');
-popupBtn.forEach((btn) => btn.addEventListener('click', (event) => {
-  const projectId = event.target.id;
-  popupInfo(projectId);
-}));
+const popupBtn = document.querySelectorAll(".project-button.popup");
+popupBtn.forEach((btn) =>
+  btn.addEventListener("click", (event) => {
+    const projectId = event.target.id;
+    popupInfo(projectId);
+  })
+);
 
 // Form validation
-const validatorLog = document.getElementById('validator-log');
-const form = document.getElementById('form');
-const emailBox = document.getElementById('email');
+const validatorLog = document.getElementById("validator-log");
+const form = document.getElementById("form");
+const emailBox = document.getElementById("email");
 const regexp = /[A-Z]/;
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
   if (regexp.test(emailBox.value)) {
     event.preventDefault();
-    validatorLog.innerText = '*no capital letters can be used for email address';
+    validatorLog.innerText =
+      "*no capital letters can be used for email address";
   }
 });
