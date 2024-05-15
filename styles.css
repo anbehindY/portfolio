@@ -382,7 +382,7 @@ main {
 }
 
 .modal-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.3em;
@@ -447,7 +447,7 @@ main {
 }
 
 p.description.popup {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -462,12 +462,12 @@ p.description.popup {
 }
 
 .link {
-  display: inline-flex;
+  display: flex;
   text-decoration: none;
   color: white;
   gap: 5%;
   align-items: center;
-  width: 140px;
+  text-wrap: nowrap;
 }
 
 .link > img {
@@ -510,27 +510,33 @@ p.description.popup {
 }
 
 .card.techscape {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/techscape_1.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/techscape_1.png");
 }
 
 .card.mootv {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/mootv.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/mootv.png");
 }
 
 .card.calculator {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/math_magicians.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/math_magicians.png");
 }
 
 .card.got {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/got.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/got.png");
 }
 
 .card.space {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/space.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/space.png");
 }
 
 .card.budget {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/budget.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/budget.png");
 }
 
 .card.techscape,
@@ -604,9 +610,8 @@ p.description.popup {
   font-size: 17px;
   background: #ff6b00;
   color: #fff;
-  width: 327px;
   height: 48px;
-  padding: 12px;
+  padding: 12px !important;
   text-align: center;
   margin-top: -35px;
   border-bottom-right-radius: 10px;
@@ -628,10 +633,29 @@ p.description.popup {
   color: rgba(91, 89, 87, 1);
 }
 
-.project-button.popup {
+.popup-button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 160px;
+  padding: 20x !important;
+  text-align: center;
+  margin-top: -35px;
+  border-bottom-right-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 30px;
+}
+
+.popup-button:hover {
+  background-color: #f55800;
+  color: #f55800;
+  cursor: pointer;
 }
 
 .link-wrapper {
@@ -650,7 +674,7 @@ p.description.popup {
 
 #head > h1 {
   color: rgba(255, 107, 0, 1);
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 72px;
   font-weight: 400;
   padding: 10px 24px 0 24px;
@@ -1113,7 +1137,7 @@ footer {
   .tech-box {
     margin-top: 5%;
   }
-  
+
   .project-button {
     width: 370px;
   }
@@ -1234,7 +1258,7 @@ footer {
 
   .modal-heading {
     width: 90%;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-weight: 400;
     font-size: 30px;
   }
@@ -1307,13 +1331,11 @@ footer {
 
   .about-me {
     padding: 4% 6%;
-    background:
-      url(Background/aboutme.svg),
-      url(Background/aboutme@2x.svg),
+    background: url(Background/aboutme.svg), url(Background/aboutme@2x.svg),
       #262626;
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 100% 9%;
+    background-position: 100% 5%;
     height: 1500px;
   }
 

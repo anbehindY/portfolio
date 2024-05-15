@@ -112,8 +112,8 @@ const modalfirst = `<div id="modal "class="modal">
                         <div class="right-section">
                           <p class="description popup">${firstCardInfo.details}</>
                           <div class="button-container">
-                            <button type="submit" class="project-button popup"><a class="link" href="https://melo-music-beta.vercel.app/" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
-                            <button type="submit" class="project-button popup"><a class="link" href="https://github.com/anbehindY/Books-Collection" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
+                            <button type="submit" class="popup-button popup"><a class="link" href="https://melo-music-beta.vercel.app/" target="_blank">See Live<img src="icons/seeLive.svg" /></a></button>
+                            <button type="submit" class="popup-button popup"><a class="link" href="https://github.com/anbehindY/melo-music" target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                           </div>
                         </div>
                       </div>
@@ -285,12 +285,12 @@ const popupInfo = (projectId) => {
                           <div class="right-section">
                             <p class="description popup">${checked.description}</p>
                             <div class="button-container">
-                              <button type="submit" class="project-button popup">
+                              <button type="submit" class="popup-button popup">
                                 <div class='link-wrapper'>
                                   <a class="link" href=${checked.liveLink} target="_blank">See Live<img src="icons/seeLive.svg" /></a>
                                 </div>
                               </button>
-                              <button type="submit" class="project-button popup"><a class="link" href=${checked.sourceLink} target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
+                              <button type="submit" class="popup-button popup"><a class="link" href=${checked.sourceLink} target="_blank">See Source<img src="icons/seeSource.svg" /></a></button>
                             </div>
                           </div>
                         </div>
