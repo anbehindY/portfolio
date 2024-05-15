@@ -49,14 +49,14 @@ const closeModal = () => {
 const firstCardInfo = {
   id: 1,
   class: "more",
-  image: "melo.png",
-  title2: "Melo Music",
+  image: "iconic.png",
+  title2: "iCONIC",
   details:
-    "Melo-Music is a landing page built on top of React and TailwindCSS. With Melo Music, you can download and enjoy wide varieties of songs from classic traditional songs to epic trending music genres.",
+    "This is an e-commerce website for a variety of apple products and accessories. Customers can view products, add to cart, and make purchases. The website is built with Next.js and TailwindCSS.",
   tech_stack: {
-    tech0: "React",
+    tech0: "Next.js",
     tech1: "TailwindCSS",
-    tech2: "Next.js",
+    tech2: "Node.js",
   },
 };
 
@@ -139,19 +139,19 @@ firstButton.onclick = firstModal;
 const cardsInfo = [
   {
     id: 1,
-    class: "techscape",
-    image: "techscape_1.png",
-    title: "TechScape@3AM",
+    class: "melo",
+    image: "melo-mobile.png",
+    title: "Melo Music",
     details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     description:
-      "Techscape@3AM is a user interface for sharing technical knowledge to technical and non-technical people by programs, blogs, and conferences.",
+      "Melo-Music is a landing page built on top of Next.js and TailwindCSS. With Melo Music,you can enjoy wide varieties of epic trending music.",
     tech_stack: {
-      tech1: "HTML",
-      tech2: "CSS",
-      tech3: "JavaScript",
+      tech1: "Next.js",
+      tech2: "tailwindCSS",
+      tech3: "FramerMotion",
     },
     liveLink: "https://anbehindy.github.io/Techscape-3AM/index.html",
     sourceLink: "https://github.com/anbehindY/Techscape-3AM",

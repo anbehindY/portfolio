@@ -432,7 +432,7 @@ main {
 #img10 {
   width: 100%;
   height: 300px;
-  background: url(assets/melo-mobile.png);
+  background: url(assets/iconic.png);
   margin: 30px 0 10px 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -509,9 +509,9 @@ p.description.popup {
   justify-content: space-between;
 }
 
-.card.techscape {
+.card.melo {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/techscape_1.png");
+    url("assets/melo-mobile.png");
 }
 
 .card.mootv {
@@ -539,7 +539,7 @@ p.description.popup {
     url("assets/budget.png");
 }
 
-.card.techscape,
+.card.melo,
 .card.mootv,
 .card.calculator,
 .card.got,
@@ -1174,8 +1174,8 @@ footer {
     transform: scale(0);
   }
 
-  .card.techscape:hover {
-    background: url(assets/techscape_1.png);
+  .card.melo:hover {
+    background: url(assets/melo-mobile.png);
   }
 
   .card.mootv:hover {
@@ -1198,7 +1198,7 @@ footer {
     background: url(assets/space.png);
   }
 
-  .card.techscape:hover,
+  .card.melo:hover,
   .card.mootv:hover,
   .card.calculator:hover,
   .card.budget:hover,
@@ -1265,8 +1265,8 @@ footer {
 
   #img10 {
     width: 30%;
-    height: 400px;
-    background: url(assets/melo-mobile.png);
+    height: 200px;
+    background: url(assets/iconic.png);
     background-repeat: no-repeat;
     margin: 0;
     background-size: contain;
